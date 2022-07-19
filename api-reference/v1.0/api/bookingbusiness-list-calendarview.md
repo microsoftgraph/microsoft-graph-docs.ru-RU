@@ -1,24 +1,25 @@
 ---
-title: Список бизнес-календаряView
-description: Получите коллекцию объектов bookingAppointment для bookingBusiness, которая происходит в указанном диапазоне дат.
+title: Вывод списка элементов бизнес-календаря
+description: Получение коллекции объектов bookingAppointment для объекта bookingBusiness, который происходит в указанном диапазоне дат.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 4d5f298052dc086358c195decc4ffb6cb0d58225
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 81fb96038e08657bd63270e463b0a540348a5e16
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014266"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856360"
 ---
-# <a name="list-business-calendarview"></a>Список бизнес-календаряView
+# <a name="list-business-calendarview"></a>Вывод списка элементов бизнес-календаря
 
 Пространство имен: microsoft.graph
 
-Получите коллекцию [объектов bookingAppointment](../resources/bookingappointment.md) для [bookingBusiness,](../resources/bookingbusiness.md)которая происходит в указанном диапазоне дат.
+Получение коллекции объектов [bookingAppointment](../resources/bookingappointment.md) для [объекта bookingBusiness](../resources/bookingbusiness.md) , который происходит в указанном диапазоне дат.
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
@@ -39,27 +40,31 @@ GET /solutions/bookingBusinesses/{id}/calendarView?start={start-value}&end={end-
 
 | Параметр    | Тип   |Описание|
 |:---------------|:--------|:----------|
-|end|DateTimeOffset|Дата окончания и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, 1 января 2018 г. UTC в 3:00 будет выглядеть так: '2018-01-01T03:00:00Z', а в PST будет выглядеть так: '2017-12-31T19:00:00-08:00'.|
-|start|DateTimeOffset|Дата начала и время диапазона времени, представленного в формате ISO 8601, как UTC или смещение от UTC. Например, полночь UTC 1 января 2018 г. будет выглядеть так: '2018-01-01T00:00:00Z', и то же время в PST будет выглядеть так: '2017-12-31T16:00:00-08:00'.|
+|end|DateTimeOffset|Дата и время окончания диапазона времени, представленные в формате ISO 8601, в формате UTC или смещение от UTC. Например, 1 января 2018 г. в 03:00 UTC будет выглядеть следующим образом: "2018-01-01T03:00:00Z", а то же время в PST-файле будет выглядеть следующим образом: "2017-12-31T19:00:00-08:00".|
+|start|DateTimeOffset|Дата и время начала диапазона времени, представленные в формате ISO 8601 в формате UTC или смещение от UTC. Например, полночь в формате UTC 1 января 2018 г. будет выглядеть следующим образом: "2018-01-01T00:00:00Z" и то же время в PST будет выглядеть следующим образом: "2017-12-31T16:00:00-08:00".|
 
-Значения и интерпретируются с помощью смещения часового пояса, указанного в соответствующих значениях, и не влияют на значение заглавного заглавного `start` `end` `Prefer: outlook.timezone` загона, если он присутствует.
+Значения и интерпретируются `start` `end` `Prefer: outlook.timezone` с помощью смещения часового пояса, указанного в соответствующих значениях, и не затрагиваются значением заголовка при наличии.
 
-Этот метод также поддерживает некоторые параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
+Этот метод также поддерживает некоторые $count и $expand [OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
 
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -70,7 +75,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

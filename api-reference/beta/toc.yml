@@ -10702,6 +10702,26 @@ items:
                         href: api/windowsupdates-updatableassetgroup-removemembers.md
                       - name: Удаление элементов по идентификатору
                         href: api/windowsupdates-updatableassetgroup-removemembersbyid.md
+              - name: Подключение к ресурсу
+                href: resources/windowsupdates-resourceconnection.md
+                items:
+                  - name: Список
+                    href: api/windowsupdates-updates-list-resourceconnections.md
+                  - name: Получение
+                    href: api/windowsupdates-resourceconnection-get.md
+                  - name: Удаление
+                    href: api/windowsupdates-resourceconnection-delete.md
+                  - name: Подключение к операционной аналитике
+                    href: resources/windowsupdates-operationalinsightsconnection.md
+                    items:
+                      - name: Список
+                        href: api/windowsupdates-updates-list-resourceconnections-operationalinsightsconnection.md
+                      - name: Создание
+                        href: api/windowsupdates-updates-post-resourceconnections-operationalinsightsconnection.md
+                      - name: Получение
+                        href: api/windowsupdates-operationalinsightsconnection-get.md
+                      - name: Удаление
+                        href: api/windowsupdates-operationalinsightsconnection-delete.md
           - name: Управление несколькими клиентами (предварительная версия)
             items:
               - name: Управляемый клиент
@@ -14390,6 +14410,13 @@ items:
             items:
               - name: Обзор
                 href: resources/report.md
+              - name: Settings
+                href: resources/adminreportsettings.md
+                items:
+                  - name: Получение
+                    href: api/adminreportsettings-get.md
+                  - name: Обновление
+                    href: api/adminreportsettings-update.md
               - name: Использование устройств Microsoft Teams
                 href: resources/microsoft-teams-device-usage-reports.md
                 items:
@@ -15143,6 +15170,59 @@ items:
                 href: api/tiindicator-deletetiindicators.md
               - name: Удаление нескольких по внешнему ИД
                 href: api/tiindicator-deletetiindicatorsbyexternalid.md
+          - name: Отправка угроз (предварительная версия)
+            href: resources/security-threatsubmission.md
+            items:
+              - name: Email отправки угрозы
+                href: resources/security-emailthreatsubmission.md
+                items:
+                  - name: Список
+                    href: api/security-emailthreatsubmission-list.md
+                  - name: Создание
+                    href: api/security-emailthreatsubmission-post-emailthreats.md
+                  - name: Получение
+                    href: api/security-emailthreatsubmission-get.md
+                  - name: Проверка
+                    href: api/security-emailthreatsubmission-review.md
+                  - name: Email отправки угрозы содержимого
+                    href: resources/security-emailcontentthreatsubmission.md
+                  - name: Email отправки угрозы URL-адреса
+                    href: resources/security-emailurlthreatsubmission.md
+              - name: Email отправки угроз
+                href: resources/security-emailthreatsubmissionpolicy.md
+                items:
+                  - name: Список
+                    href: api/security-emailthreatsubmissionpolicy-list.md
+                  - name: Создание
+                    href: api/security-emailthreatsubmissionpolicy-post-emailthreatsubmissionpolicies.md
+                  - name: Получение
+                    href: api/security-emailthreatsubmissionpolicy-get.md
+                  - name: Обновление
+                    href: api/security-emailthreatsubmissionpolicy-update.md
+                  - name: Delete
+                    href: api/security-emailthreatsubmissionpolicy-delete.md
+              - name: Отправка угрозы URL-адреса
+                href: resources/security-urlthreatsubmission.md
+                items:
+                  - name: Список
+                    href: api/security-urlthreatsubmission-list.md
+                  - name: Создание
+                    href: api/security-urlthreatsubmission-post-urlthreats.md
+                  - name: Получение
+                    href: api/security-urlthreatsubmission-get.md
+              - name: Отправка угрозы файла
+                href: resources/security-filethreatsubmission.md
+                items:
+                  - name: Список
+                    href: api/security-filethreatsubmission-list.md
+                  - name: Создание
+                    href: api/security-filethreatsubmission-post-filethreats.md
+                  - name: Получение
+                    href: api/security-filethreatsubmission-get.md
+                  - name: Отправка угрозы URL-адреса файла
+                    href: resources/security-fileurlthreatsubmission.md
+                  - name: Отправка угрозы содержимого файла
+                    href: resources/security-filecontentthreatsubmission.md
           - name: Ошибки
             href: resources/security-error-codes.md
       - name: Сайты и списки
@@ -15401,7 +15481,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Перечисление параметров группы
@@ -15560,7 +15640,7 @@ items:
               - name: Получение основного канала
                 href: api/team-get-primarychannel.md
               - name: Как получить фотографию группы
-                href: api/team-get-photo.md
+                href: api/profilephoto-get.md
               - name: Обновление фотографии команды
                 href: api/profilephoto-update.md
               - name: Завершение миграции для команды
@@ -15936,7 +16016,7 @@ items:
                 href: api/userteamwork-sendactivitynotification.md
               - name: Массовая отправка уведомлений нескольким пользователям
                 href: api/teamwork-sendactivitynotificationtorecipients.md
-          - name: Tab
+          - name: Вкладка
             href: resources/teamstab.md
             items:
               - name: Вкладка в канале

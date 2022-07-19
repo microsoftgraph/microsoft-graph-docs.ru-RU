@@ -1,22 +1,22 @@
 ---
-title: Значения Graph Windows обновлений Майкрософт
-description: Значения Graph Windows обновлений Майкрософт
+title: Значения перечисления Windows Обновления Microsoft Graph
+description: Значения перечисления Windows Обновления Microsoft Graph
 author: aarononeal
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: enumTypes
-ms.openlocfilehash: 28a167a17436e30e07b6592329f1c56771bfcba2
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 724359a4722aee75cdb0e0f0dccf5d0dcbccfee8
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61860441"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855905"
 ---
-# <a name="microsoft-graph-windows-updates-enumeration-values"></a>Значения Graph Windows обновлений Майкрософт
+# <a name="microsoft-graph-windows-updates-enumeration-values"></a>Значения перечисления Windows Обновления Microsoft Graph
 
 Пространство имен: microsoft.graph.windowsUpdates
 
-### <a name="azureaddeviceregistrationerrorreason-values"></a>azureADDeviceRegistrationErrorReason 
+### <a name="azureaddeviceregistrationerrorreason-values"></a>Значения azureADDeviceRegistrationErrorReason 
 
 |Member|
 |:---|
@@ -26,7 +26,7 @@ ms.locfileid: "61860441"
 |invalidAzureADJoin|
 |unknownFutureValue|
 
-### <a name="deploymentstatereasonvalue-values"></a>значения deploymentStateReasonValue 
+### <a name="deploymentstatereasonvalue-values"></a>Значения deploymentStateReasonValue 
 
 |Member|
 |:---|
@@ -37,26 +37,26 @@ ms.locfileid: "61860441"
 |unknownFutureValue|
 |faultedByContentOutdated|
 
-### <a name="deploymentstatevalue-values"></a>значения deploymentStateValue 
+### <a name="deploymentstatevalue-values"></a>Значения deploymentStateValue 
 
 |Member|
 |:---|
 |scheduled|
-|предложение|
-|приостановлено|
-|faulted|
-|архив|
+|Предлагая|
+|Приостановлена|
+|Испортить|
+|Архив|
 |unknownFutureValue|
 
-### <a name="equivalentcontentoption-values"></a>эквивалентные значенияContentOption 
+### <a name="equivalentcontentoption-values"></a>значения equivalentContentOption 
 
 |Member|
 |:---|
-|Нет|
+|none|
 |latestSecurity|
 |unknownFutureValue|
 
-### <a name="monitoringaction-values"></a>значения monitoringAction 
+### <a name="monitoringaction-values"></a>Значения monitoringAction 
 
 |Member|
 |:---|
@@ -64,44 +64,53 @@ ms.locfileid: "61860441"
 |pauseDeployment|
 |unknownFutureValue|
 
-### <a name="monitoringsignal-values"></a>monitoringSignal values 
+### <a name="monitoringsignal-values"></a>значения monitoringSignal 
 
 |Member|
 |:---|
 |откат|
 |unknownFutureValue|
 
-### <a name="qualityupdateclassification-values"></a>значения qualityUpdateClassification 
+### <a name="qualityupdateclassification-values"></a>Значения qualityUpdateClassification 
 
 |Member|
 |:---|
 |все|
-|безопасность|
+|Безопасности|
 |nonSecurity|
 |unknownFutureValue|
 
-### <a name="requesteddeploymentstatevalue-values"></a>requestedDeploymentStateValue values 
+### <a name="requesteddeploymentstatevalue-values"></a>Значения requestedDeploymentStateValue 
 
 |Member|
 |:---|
-|Нет|
-|приостановлено|
-|архив|
+|none|
+|Приостановлена|
+|Архив|
 |unknownFutureValue|
 
-### <a name="safeguardcategory-values"></a>safeguardCategory values 
+### <a name="resourceconnectionstate-values"></a>Значения resourceConnectionState 
+
+|Member|
+|:---|
+|Подключен|
+|notAuthorized|
+|notFound|
+|unknownFutureValue|
+
+### <a name="safeguardcategory-values"></a>значения safeguardCategory 
 
 |Member|
 |:---|
 |likelyIssues|
 |unknownFutureValue|
 
-### <a name="updatecategory-values"></a>updateCategory values 
+### <a name="updatecategory-values"></a>Значения updateCategory 
 
 |Member|
 |:---|
-|функция|
-|качество|
+|Функция|
+|Качество|
 |unknownFutureValue|
 
 <!--

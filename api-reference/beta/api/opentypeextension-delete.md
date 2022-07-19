@@ -1,18 +1,18 @@
 ---
-title: Удаление открытого расширения
+title: Удаление openTypeExtension
 description: 'Удаление открытого расширения (объекта openTypeExtension) из указанного экземпляра ресурса. '
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 7aa81b04f64ebc656d721f08248b0b3993abe2d3
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: d41d6e784c5e2194bc2a4671ace11f44f56ac529
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65821150"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855751"
 ---
-# <a name="delete-open-extension"></a>Удаление открытого расширения
+# <a name="delete-opentypeextension"></a>Удаление openTypeExtension
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "65821150"
 
 В зависимости от ресурса, из который вы удаляете расширение, и запрашиваемого типа разрешений (делегированного или приложения), разрешение, указанное в следующей таблице, является наименее привилегированным, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 | [baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
 | [baseTasklist](../resources/basetasklist.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Tasks.ReadWrite.All |
@@ -50,29 +50,23 @@ ms.locfileid: "65821150"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-DELETE /administrativeUnits/{Id}/extensions/{extensionId}
-DELETE /devices/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/extensions/{extensionId}
-DELETE /groups/{id}/events/{id}/extensions/{extensionId}
-DELETE /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-DELETE /organization/{Id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-DELETE /users/{id|userPrincipalName}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/extensions/{extensionId}
-DELETE /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
+DELETE /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+DELETE /devices/{deviceId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/extensions/{extensionId}
+DELETE /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+DELETE /groups/{groupId}/threads/{threadIid}/posts/{postId}/extensions/{extensionId}
+DELETE /users/{userIid|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+DELETE /organization/{organizationId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+DELETE /users/{userId|userPrincipalName}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/extensions/{extensionId}
+DELETE /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
 ```
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно удалить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают удаление открытых расширений этих экземпляров подобным образом.
-
-## <a name="path-parameters"></a>Параметры пути
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
-|extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |

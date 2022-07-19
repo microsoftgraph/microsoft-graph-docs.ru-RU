@@ -1,24 +1,24 @@
 ---
-title: тип ресурсов безопасности
-description: Подключение продуктов, служб и партнеров майкрософт для оптимизации операций по обеспечению безопасности и улучшения возможностей защиты от угроз, обнаружения и реагирования.
-author: preetikr
+title: Тип ресурса security
+description: Подключает продукты, службы и партнеры майкрософт для упрощения операций безопасности и улучшения защиты от угроз, обнаружения и реагирования.
+author: angelgolfer-ms
 ms.localizationpriority: medium
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 494fc483645fe0a5422013556b2a44cc21aaadaf
-ms.sourcegitcommit: 0a312d63934cdf9789a5648c2b3f348f48542ff4
+ms.openlocfilehash: c7342f83c64b895b08a66429e0e20ab2cd7b5960
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60220768"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856290"
 ---
-# <a name="security-resource-type"></a>тип ресурсов безопасности
+# <a name="security-resource-type"></a>Тип ресурса security
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Подключение продуктов, служб и партнеров майкрософт для оптимизации операций по обеспечению безопасности и улучшения возможностей защиты от угроз, обнаружения и реагирования.
+Подключает продукты, службы и партнеры майкрософт для упрощения операций безопасности и улучшения защиты от угроз, обнаружения и реагирования.
 
 ## <a name="methods"></a>Методы
 Нет.
@@ -29,12 +29,11 @@ ms.locfileid: "60220768"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
-|оповещения|Коллекция [alert](../resources/alert.md)|Уведомления о подозрительных или потенциальных проблемах безопасности клиента.|
-|attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Предоставляет арендаторам возможность запускать смоделированную и реалистичную фишинговую атаку и учиться у нее.|
-|инциденты | [коллекция инцидентов](incident.md) | Коллекция инцидентов в Microsoft 365 Defender, каждый из которых — набор коррелирующих оповещений и связанных метаданных, отражающих историю атаки.|
-|secureScores | [коллекция secureScore](securescores.md) | Измерения позы безопасности клиентов, чтобы защитить их от угроз. |
-|securityactions|[коллекция securityAction](../resources/securityaction.md)|Действия, которые реагируют на оповещения для блокировки вредоносных действий.|
-|tiindicators|[коллекция tiIndicator](../resources/tiindicator.md)|Индикаторы угроз, отправленные в Корпорацию Майкрософт, которые определяют вредоносные действия.|
+|оповещения|Коллекция [alert](../resources/alert.md)|Уведомления о подозрительных или потенциальных проблемах безопасности в клиенте клиента.|
+|attackSimulation|[attackSimulationRoot](../resources/attacksimulationroot.md)|Предоставляет клиентам возможность запускать имитацию и реалистичные фишинговые атаки и учиться на них.|
+|securityactions|[securityAction](../resources/securityaction.md)|Действия, которые реагируют на оповещения для блокировки вредоносных действий.|
+|tiindicators|[Коллекция tiIndicator](../resources/tiindicator.md)|Индикаторы угроз, отправляемые в корпорацию Майкрософт, которые идентифицируют вредоносные действия.|
+|threatSubmission|[security.threatSubmission](../resources/security-threatsubmission.md)|Отправка угрозы в корпорацию Майкрософт; Например, подозрительная угроза электронной почты, угроза URL-адреса или файловая угроза.|
 
 ## <a name="json-representation"></a>Представление JSON
 Ниже указано представление ресурса в формате JSON.

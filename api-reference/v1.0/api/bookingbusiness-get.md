@@ -1,22 +1,22 @@
 ---
-title: Get bookingBusiness
-description: Получите свойства и связи объекта bookingBusiness.
+title: Получение bookingBusiness
+description: Получение свойств и связей объекта bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 828b8d316149aa462f33b6d0fce3a6d2ae886f9e
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: a9301622dc026dc8549a7a8a0b09b0b9cf3f6930
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014336"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856066"
 ---
-# <a name="get-bookingbusiness"></a>Get bookingBusiness
+# <a name="get-bookingbusiness"></a>Получение bookingBusiness
 
 Пространство имен: microsoft.graph
 
-Получите свойства и связи объекта [bookingBusiness.](../resources/bookingbusiness.md)
+Получение свойств и связей объекта [bookingBusiness](../resources/bookingbusiness.md) .
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
@@ -24,27 +24,36 @@ ms.locfileid: "62014336"
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Приложение | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
+
+Этот метод поддерживает $count и $expand параметров [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingBusiness](../resources/bookingbusiness.md) в тексте ответа.
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -55,7 +64,10 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Fabrikam@contos
 ```
 
 ### <a name="response"></a>Отклик
-Ниже представлен пример ответа. Примечание: показанный здесь объект ответа может быть сокращен для удобочитаемости.
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
   "blockType": "response",
   "truncated": true,

@@ -1525,6 +1525,8 @@ items:
                 href: api/bookingbusiness-publish.md
               - name: Отмена публикации
                 href: api/bookingbusiness-unpublish.md
+              - name: Получение сведений о доступности персонала
+                href: api/bookingbusiness-getstaffavailability.md
           - name: Резервирование
             href: resources/bookingappointment.md
             items:
@@ -6833,7 +6835,7 @@ items:
         items:
           - name: Обзор
             href: resources/planner-overview.md
-          - name: План
+          - name: Планирование
             href: resources/plannerplan.md
             items:
               - name: Создание плана
@@ -6951,6 +6953,10 @@ items:
                 href: api/user-list-joinedteams.md
               - name: Получение основного канала
                 href: api/team-get-primarychannel.md
+              - name: Как получить фотографию группы
+                href: api/profilephoto-get.md
+              - name: Обновление фотографии команды
+                href: api/profilephoto-update.md
               - name: Перечисление всех команд
                 href: /graph/teams-list-all-teams?context=graph/api/1.0
               - name: Завершение миграции для команды
@@ -7167,7 +7173,7 @@ items:
                 href: api/team-sendactivitynotification.md
               - name: Отправка уведомления пользователю
                 href: api/userteamwork-sendactivitynotification.md
-          - name: Tab
+          - name: Вкладка
             href: resources/teamstab.md
             items:
               - name: Вкладка в канале

@@ -5,12 +5,12 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: b8749e7831a54e4d6b94add1e37e5eaa6a95e86b
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: fa6da0486972982566b6785a8f2aa62fef408b30
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160547"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856283"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
@@ -43,7 +43,7 @@ ms.locfileid: "66160547"
 |[Перечисление ваших команд](../api/user-list-joinedteams.md) | Коллекция [team](team.md) | Перечисление команд, в которых вы являетесь участником. |
 |[Перечисление связанных команд](../api/associatedteaminfo-list.md) | коллекция [associatedTeamInfo](associatedteaminfo.md) | Получите список объектов [associatedTeamInfo](associatedteaminfo.md) в Microsoft Teams, с которыми связан [пользователь](user.md). |
 |[Перечисление всех команд в организации](../api/teams-list.md) | Коллекция [team](team.md) | Перечисление всех команд в организации. |
-|[Получение фотографии команды](../api/team-get-photo.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
+|[Получение фотографии команды](../api/profilephoto-get.md) | Двоичные данные | Вы можете получить фотографию (изображение) для команды. |
 |[Завершение миграции](../api/team-completemigration.md)|[team](team.md)| Удаление режима миграции из команды, после чего команда становится доступной для публикации и чтения сообщений пользователями.|
 |[Перечисление всех каналов](../api/team-list-allchannels.md)|Коллекция [channel](../resources/channel.md)|Получить список [каналов](../resources/channel.md) в этой **команде** или общих с этой **командой** (входящие каналы).|
 |[Перечисление каналов](../api/channel-list.md)|Коллекция [channel](../resources/channel.md)|Получение списка [каналов](../resources/channel.md) в **команде**.|

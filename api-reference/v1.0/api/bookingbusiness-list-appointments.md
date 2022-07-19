@@ -1,52 +1,63 @@
 ---
 title: Список встреч
-description: Получите список объектов bookingAppointment для указанного bookingbusiness.
+description: Получение списка объектов bookingAppointment для указанного объекта bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 2695fa895417ebb3d2e4bb793c4565cafdf06a64
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: fbb01079dde03e2926775eb16fa6d7f7b972167a
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014273"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856052"
 ---
 # <a name="list-appointments"></a>Список встреч
 
 Пространство имен: microsoft.graph
 
-Получите список объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [bookingBusiness.](../resources/bookingbusiness.md)
+Получение списка объектов [bookingAppointment](../resources/bookingappointment.md) для указанного [объекта bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Приложение | BookingsAppointment.ReadWrite.All, Bookings.Read.All   |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses/{id}/appointments
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
 
-Чтобы получить набор назначений бизнеса Microsoft Bookings в диапазоне дат, вместо этого получите `$filter` [calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает $count и $expand параметров [запроса OData](/graph/query-parameters) для настройки ответа.
+
+Чтобы получить набор встреч бизнес-Microsoft Bookings в диапазоне дат, `$filter`вместо получения [calendarView](bookingbusiness-list-calendarview.md) для этого диапазона дат.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -57,7 +68,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {

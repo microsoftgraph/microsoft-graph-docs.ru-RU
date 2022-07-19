@@ -5,17 +5,25 @@ ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
 doc_type: enumPageType
-ms.openlocfilehash: 3e1c3cc68afaa2be716f05ddf6e0a385eff9b540
-ms.sourcegitcommit: a30eea2fa59087088f50e58706b91c0eb5b7a802
+ms.openlocfilehash: 43a22ad7bdd5ba93e70016105078c9c3e9e626a7
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66604491"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855646"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
 Пространство имен: microsoft.graph
 
+### <a name="bookingsavailabilitystatus-values"></a>Значения bookingsAvailabilityStatus
+|Member|
+|:---|
+|доступен|
+|Занят|
+|slotsAvailable|
+|outOfOffice|
+|unknownFutureValue|
 
 ### <a name="crosstenantaccesspolicytargetconfigurationaccesstype-values"></a>Значения crossTenantAccessPolicyTargetConfigurationAccessType
 
@@ -29,7 +37,7 @@ ms.locfileid: "66604491"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |group|
 
 ### <a name="federatedidpmfabehavior-values"></a>Значения federatedIdpMfaBehavior
@@ -283,7 +291,7 @@ ms.locfileid: "66604491"
 |Member|
 |:---|
 |notSpecified|
-|пользователь|
+|user|
 |servicePrincipal|
 |unknownFutureValue|
 
@@ -381,8 +389,8 @@ ms.locfileid: "66604491"
 
 |Member|
 |:---|
-|пользователь|
-|group|
+|user|
+|group;|
 
 ### <a name="authenticationmethodstate-values"></a>Значения authenticationMethodState
 
@@ -687,7 +695,7 @@ ms.locfileid: "66604491"
 |Member|
 |:---|
 |Signin|
-|пользователь|
+|user|
 |unknownFutureValue|
 
 ### <a name="riskdetectiontimingtype-values"></a>Значения riskDetectionTimingType
@@ -726,7 +734,7 @@ ms.locfileid: "66604491"
 |Доктор|3| Пользователь должен быть доктором.|
 |Опекуна|4| Защитник пользователя.|
 |child|5| Дочерний элемент пользователя.|
-|Других|6 | Неопределенная связь с пользователем.|
+|Других|6| Неопределенная связь с пользователем.|
 |unknownFutureValue|7 | Значение маркера для обеспечения совместимости в будущем.|
 
 ### <a name="scheduleentitytheme-values"></a>Значения scheduleEntityTheme
@@ -853,7 +861,7 @@ ms.locfileid: "66604491"
 | lightGray  | 3
 | lightYellow| 4
 | lightTeal  | 5
-| lightPink  | 6 
+| lightPink  | 6
 | lightBrown | 7 
 | lightRed   | 8 
 | maxColor   | 9 
@@ -1200,7 +1208,7 @@ ms.locfileid: "66604491"
 | preset3  | 3
 | preset4  | 4
 | preset5  | 5
-| preset6  | 6 
+| preset6  | 6
 | preset7  | 7 
 | preset8  | 8 
 | preset9  | 9 
@@ -1243,7 +1251,7 @@ ms.locfileid: "66604491"
 |md5|3| Тип хэша MD5.|
 |authenticodeHash256|4| Тип хэша AuthenticodeHash256.|
 |lsHash|5| Тип хэша LsHash.|
-|CTPH|6 | Тип хэша CTPH.|
+|CTPH|6| Тип хэша CTPH.|
 |peSha1|7 | Тип хэша PESHA1.|
 |peSha256|8 | Тип хэша PESHA256.|
 
@@ -1294,7 +1302,7 @@ ms.locfileid: "66604491"
 |localMachineSam|3| HKEY_LOCAL_MACHINE\SAM hive.|
 |localMachineSamSoftware|4| HKEY_LOCAL_MACHINE\Software hive.|
 |localMachineSystem|5| HKEY_LOCAL_MACHINE\System hive.|
-|usersDefault|6 | \\HKEY_USERS. Куст DEFAULT.|
+|usersDefault|6| \\HKEY_USERS. Куст DEFAULT.|
 
 ### <a name="registryoperation-values"></a>Значения registryOperation
 
@@ -1319,7 +1327,7 @@ ms.locfileid: "66604491"
 |dwordLittleEndian|3| REG_DWORD_LITTLE_ENDIAN типа значения реестра.|
 |dwordBigEndian|4| REG_DWORD_BIG_ENDIAN типа значения реестра.|
 |expandSz|5| REG_EXPAND_SZ типа значения реестра.|
-|ссылка|6 | REG_LINK типа значения реестра.|
+|ссылка|6| REG_LINK типа значения реестра.|
 |multiSz|7 | REG_MULTI_SZ типа значения реестра.|
 |none|8 | REG_NONE типа значения реестра.|
 |qword|9 | REG_QWORD типа значения реестра.|
@@ -1533,7 +1541,7 @@ ms.locfileid: "66604491"
 | Элемент        | Значение | Описание              |
 |:--------------|:------|:-------------------------|
 | Неопределенный     | 0     | Пока не известно.            |
-| пользователь          | 1     | Отправка пользователя.         |
+| user          | 1     | Отправка пользователя.         |
 | Администратора | 2     | Отправка администратора клиента. |
 
 ### <a name="threatassessmentresulttype-values"></a>Значения threatAssessmentResultType
@@ -1554,7 +1562,7 @@ ms.locfileid: "66604491"
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
-| domainBlockList       | 6      | Список блоков домена отправителя.           |
+| domainBlockList       | 6     | Список блоков домена отправителя.           |
 | notInAddressBook      | 7      | Исключить отправителя не в адресной книге. |
 | firstTimeSender       | 8      | Заблокировано из-за первого отправителя.   |
 | autoPurgeToInbox      | 9      | Перемещение сообщения TimeTravel в папку "Входящие".   |
@@ -1569,7 +1577,7 @@ ms.locfileid: "66604491"
 
 | Значение |
 |:-----------------|
-| сообщение |
+| message |
 | chatEvent |
 | Ввода |
 | unknownFutureValue |
@@ -1638,7 +1646,7 @@ ms.locfileid: "66604491"
 |dateTime | Столбец DateTime. |
 |Поиска | Столбец подстановки. |
 |логический | Столбец "Да" или "Нет". |
-|пользователь | Столбец пользователя или группы. |
+|user | Столбец пользователя или группы. |
 |url | Гиперссылка или столбец рисунка. |
 |Рассчитывается | Вычисляемый столбец. |
 |расположение | Столбец расположения. |
@@ -1775,7 +1783,7 @@ ms.locfileid: "66604491"
 
 | Member                |
 |:----------------------|
-| string                |
+| Строка                |
 | логический               |
 | int64                 |
 | Stringcollection      |
@@ -1788,7 +1796,7 @@ ms.locfileid: "66604491"
 |:----------------------|
 | Builtin               |
 | Пользовательские                |
-| Обязательный              |
+| обязательно              |
 | unknownFutureValue    |
 
 ### <a name="identityuserflowattributeinputtype-values"></a>Значения identityUserFlowAttributeInputType
@@ -1858,7 +1866,7 @@ ms.locfileid: "66604491"
 
 |Member|
 |:---|
-|пользователь|
+|user|
 |приложение|
 |system|
 |unknownFutureValue|
@@ -1879,7 +1887,7 @@ ms.locfileid: "66604491"
 |Member|
 |:---|
 |team|
-|channel|
+|Канал|
 |чат|
 |unknownFutureValue|
 
@@ -1925,7 +1933,7 @@ ms.locfileid: "66604491"
 
 |Member|
 |:---|
-|Microsoft|
+|microsoft|
 |thirdParty|
 |Клиентов|
 |unknownFutureValue|

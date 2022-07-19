@@ -5,12 +5,12 @@ doc_type: enumPageType
 ms.localizationpriority: medium
 ms.prod: non-product-specific
 author: MSGraphDocsvTeam
-ms.openlocfilehash: dd17d54c0d6cd991f02a5043765aab199bfc3a05
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.openlocfilehash: 86ab0078883d3bf00c625a8a3c9d9a3d5ac025dd
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690072"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855898"
 ---
 # <a name="enum-values"></a>Значения перечисления
 
@@ -148,7 +148,7 @@ ms.locfileid: "66690072"
 |Member|
 |:---|
 |user|
-|group;|
+|group|
 
 ### <a name="accesspackagefilterbycurrentuseroptions-values"></a>значения accessPackageFilterByCurrentUserOptions
 
@@ -370,9 +370,9 @@ ms.locfileid: "66690072"
 
 |Member|
 |:---|
-|Строка|
+|String|
 |Целое число|
-|Справка|
+|Справочные материалы|
 |Binary|
 |Логический|
 |DateTime|
@@ -941,7 +941,7 @@ ms.locfileid: "66690072"
 
 |Member|
 |:---|
-|обязательно|
+|Обязательный|
 |previouslyИмя|
 |notApplicable|
 |unknownFutureValue|
@@ -1248,7 +1248,7 @@ ms.locfileid: "66690072"
 | Доктор             | 3     | Пользователь должен быть доктором.                       |
 | Опекуна           | 4     | Защитник пользователя.                     |
 | child              | 5     | Дочерний элемент пользователя.                        |
-| Других              | 6      | Неопределенная связь с пользователем. |
+| Других              | 6     | Неопределенная связь с пользователем. |
 | unknownFutureValue | 7      | Значение маркера для обеспечения совместимости в будущем.   |
 
 ### <a name="scheduleentitytheme-values"></a>Значения scheduleEntityTheme
@@ -1426,7 +1426,7 @@ ms.locfileid: "66690072"
 | lightGray   | 3     |
 | lightYellow | 4     |
 | lightTeal   | 5     |
-| lightPink   | 6      |
+| lightPink   | 6     |
 | lightBrown  | 7      |
 | lightRed    | 8      |
 | maxColor    | 9      |
@@ -1439,7 +1439,7 @@ ms.locfileid: "66690072"
 | Удаление           | 2     |
 | deletionFailed     | 3     |
 | provisioningFailed | 5     |
-| Подготовлено        | 6      |
+| Подготовлено        | 6     |
 | Подготовки       | 7      |
 | unknownFutureValue | 8      |
 
@@ -1792,7 +1792,7 @@ ms.locfileid: "66690072"
 | preset3  | 3     |
 | preset4  | 4     |
 | preset5  | 5     |
-| preset6  | 6      |
+| preset6  | 6     |
 | preset7  | 7      |
 | preset8  | 8      |
 | preset9  | 9      |
@@ -1833,7 +1833,7 @@ ms.locfileid: "66690072"
 | md5                 | 3     | Тип хэша MD5.                 |
 | authenticodeHash256 | 4     | Тип хэша AuthenticodeHash256. |
 | lsHash              | 5     | Тип хэша LsHash.              |
-| CTPH                | 6      | Тип хэша CTPH.                |
+| CTPH                | 6     | Тип хэша CTPH.                |
 | peSha1              | 7      | Тип хэша PESHA1.              |
 | peSha256            | 8      | Тип хэша PESHA256.            |
 
@@ -1878,7 +1878,7 @@ ms.locfileid: "66690072"
 | localMachineSam         | 3     | HKEY_LOCAL_MACHINE\SAM hive.      |
 | localMachineSamSoftware | 4     | HKEY_LOCAL_MACHINE\Software hive. |
 | localMachineSystem      | 5     | HKEY_LOCAL_MACHINE\System hive.   |
-| usersDefault            | 6      | \\HKEY_USERS. Куст DEFAULT.        |
+| usersDefault            | 6     | \\HKEY_USERS. Куст DEFAULT.        |
 
 ### <a name="registryoperation-values"></a>Значения registryOperation
 
@@ -1903,7 +1903,7 @@ ms.locfileid: "66690072"
 | dwordLittleEndian | 3     | REG_DWORD_LITTLE_ENDIAN типа значения реестра. |
 | dwordBigEndian    | 4     | REG_DWORD_BIG_ENDIAN типа значения реестра.    |
 | expandSz          | 5     | REG_EXPAND_SZ типа значения реестра.           |
-| ссылка              | 6      | REG_LINK типа значения реестра.                |
+| ссылка              | 6     | REG_LINK типа значения реестра.                |
 | multiSz           | 7      | REG_MULTI_SZ типа значения реестра.            |
 | none              | 8      | REG_NONE типа значения реестра.                |
 | qword             | 9      | REG_QWORD типа значения реестра.               |
@@ -2115,7 +2115,7 @@ ms.locfileid: "66690072"
 | passthroughAuthentication | Сквозная проверка подлинности    |
 | seamlessSso               | Простой единый вход       |
 | passwordHashSync          | Синхронизация хэша паролей |
-| emailAsAlternateId        | Адрес электронной почты в качестве альтернативного идентификатора      |
+| emailAsAlternateId        | Email в качестве альтернативного идентификатора      |
 | unknownFutureValue        | Элемент sentinel             |
 
 ### <a name="tokenissuertype-values"></a>Значения tokenIssuerType
@@ -2423,7 +2423,7 @@ ms.locfileid: "66690072"
 | blockedSender         | 3     | Список заблокированных отправителей.                |
 | advancedSpamFiltering | 4     | Расширенный параметр фильтрации нежелательной почты.     |
 | domainAllowList       | 5     | Список разрешений домена отправителя.           |
-| domainBlockList       | 6      | Список блоков домена отправителя.           |
+| domainBlockList       | 6     | Список блоков домена отправителя.           |
 | notInAddressBook      | 7      | Исключить отправителя не в адресной книге. |
 | firstTimeSender       | 8      | Заблокировано из-за первого отправителя.   |
 | autoPurgeToInbox      | 9      | Перемещение сообщения TimeTravel в папку "Входящие".   |
@@ -2521,7 +2521,7 @@ ms.locfileid: "66690072"
 | int64                 | 3     | Тип данных Int                       |
 | Stringcollection      | 4     | Тип данных коллекции строк         |
 |dateTime|5||
-| unknownFutureValue    | 6      | Элемент sentinel.                  |
+| unknownFutureValue    | 6     | Элемент sentinel.                  |
 
 ### <a name="identityuserflowattributetype-values"></a>Значения identityUserFlowAttributeType
 
@@ -3011,7 +3011,7 @@ ms.locfileid: "66690072"
 |softwareUpdate|3|Обновление программного обеспечения на устройстве.|
 |deviceManagementAgentConfigUpdate|4|Обновите конфигурацию агента устройства.|
 |remoteLogin|5|Удаленное имя входа устройства.|
-|remoteLogout|6 |Удаленный вход устройства.|
+|remoteLogout|6|Удаленный вход устройства.|
 |unknownFutureValue|7 |Значение sentinel для развиваемого перечисления. Не следует использовать.|
 
 ### <a name="teamworksoftwarefreshness-values"></a>Значения teamworkSoftwareFreshness
@@ -3113,4 +3113,84 @@ ms.locfileid: "66690072"
 |Прекращено|
 |Прекращения|
 |terminationRequested|
+|unknownFutureValue|
+
+### <a name="longrunningoperationstatus-values"></a>Значения longRunningOperationStatus 
+
+|Member|
+|:---|
+|notStarted|
+|Запущена|
+|Удалось|
+|Сбой при|
+|Пропущен|
+|unknownFutureValue|
+
+### <a name="submissioncategory-values"></a>Значения submissionCategory 
+
+|Member|
+|:---|
+|notJunk|
+|уверенности|
+|степенью|
+|malware|
+|unknownFutureValue|
+
+### <a name="submissionclientsource-values"></a>Значения submissionClientSource 
+
+|Member|
+|:---|
+|microsoft|
+|Других|
+|unknownFutureValue|
+
+### <a name="submissioncontenttype-values"></a>Значения submissionContentType 
+
+|Member|
+|:---|
+|email|
+|url|
+|file|
+|приложение|
+|unknownFutureValue|
+
+### <a name="submissionresultcategory-values"></a>Значения submissionResultCategory 
+
+|Member|
+|:---|
+|notJunk|
+|уверенности|
+|степенью|
+|malware|
+|allowedByPolicy|
+|blockedByPolicy|
+|Обманывать|
+|unknown|
+|noResultAvailable|
+|unknownFutureValue|
+
+### <a name="submissionsource-values"></a>Значения submissionSource 
+
+|Member|
+|:---|
+|user|
+|Администратора|
+|unknownFutureValue|
+
+### <a name="tenantallowblocklistaction-values"></a>Значения tenantAllowBlockListAction 
+
+|Member|
+|:---|
+|Позволяют|
+|Блок|
+|unknownFutureValue|
+
+### <a name="tenantallowblocklistentrytype-values"></a>Значения tenantAllowBlockListEntryType 
+
+|Member|
+|:---|
+|url|
+|fileHash|
+|отправитель;|
+|получатель;|
 |unknownFutureValue|

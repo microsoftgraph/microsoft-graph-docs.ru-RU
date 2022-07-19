@@ -5,12 +5,12 @@ ms.localizationpriority: medium
 author: kevinbellinger
 ms.prod: people
 doc_type: apiPageType
-ms.openlocfilehash: aaac8d496bb2a958ecc0b70f206d8690f2846324
-ms.sourcegitcommit: 71186ad44d8d0df15e10b0f89df68d2ef0cf9d14
+ms.openlocfilehash: 5986ff4b15586625100d52f7253bef032f0c4b03
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61807480"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856185"
 ---
 # <a name="get-profilephoto"></a>Получение объекта profilePhoto
 
@@ -28,13 +28,13 @@ ms.locfileid: "61807480"
 
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Для получения фотографии профиля пользователя
+### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
-|Делегированные (личная учетная запись Майкрософт)      |   User.Read, User.ReadWrite            |
-|Для приложений      |    User.Read.All, User.ReadWrite.All           |
+|Делегированные (рабочая или учебная учетная запись)      |   Contacts.Read, Contacts.ReadWrite           |
+|Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
+|Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
 
 ### <a name="to-retrieve-the-profile-photo-of-a-group"></a>Для получения фотографии профиля группы
 
@@ -44,19 +44,27 @@ ms.locfileid: "61807480"
 |Делегированные (личная учетная запись Майкрософт)      |   Не поддерживается.            |
 |Приложение      |    Group.Read.All, Group.ReadWrite.All           |
 
-### <a name="to-retrieve-the-profile-photo-of-a-contact"></a>Для получения фотографии профиля контакта
+### <a name="to-retrieve-the-profile-photo-of-a-team"></a>Получение фотографии профиля команды
+
+| Тип разрешения | Разрешения (в порядке повышения привилегий)                   |
+| --------------- | ------------------------------------------------------------- |
+| Делегированные (рабочая или учебная учетная запись)        | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+| Делегированные (личная учетная запись Майкрософт)    | Не поддерживается.                      |
+| Приложение                               | TeamReadBasicAll, TeamSettingsReadAll, TeamSettingsReadWriteAll |
+
+### <a name="to-retrieve-the-profile-photo-of-a-user"></a>Для получения фотографии профиля пользователя
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись)      |   Contacts.Read, Contacts.ReadWrite           |
-|Делегированные (личная учетная запись Майкрософт)      |   Contacts.Read, Contacts.ReadWrite            |
-|Для приложений      |    Contacts.Read, Contacts.ReadWrite           |
+|Делегированные (рабочая или учебная учетная запись)      |   User.Read, User.ReadBasic.All, User.Read.All, User.ReadWrite, User.ReadWrite.All           |
+|Делегированные (личная учетная запись Майкрософт)      |   User.Read, User.ReadWrite            |
+|Для приложений      |    User.Read.All, User.ReadWrite.All           |
 
 > [!NOTE]
 > 
 > 1. Операция с метаданными не поддерживается для личных учетных записей Майкрософт.
 > 2. В настоящее время существует [известная проблема](/graph/known-issues#groups) c доступом к групповым фотографиям с помощью разрешений приложений.
-> 3. В настоящее время в клиентах Azure AD B2C не поддерживается Graph API пользователя с помощью API Майкрософт.
+> 3. Получение фотографии пользователя с помощью microsoft API Graph в настоящее время не поддерживается в Azure AD B2C.
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -71,6 +79,7 @@ GET /me/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contacts/{id}/photo/$value
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo/$value
+GET /team/{id}/photo/$value
 ```
 
 ### <a name="get-the-metadata-of-the-photo"></a>Получение метаданных фотографии
@@ -85,6 +94,7 @@ GET /me/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contacts/{id}/photo
 GET /me/contactfolders/{contactFolderId}/contacts/{id}/photo
 GET /users/{id | userPrincipalName}/contactfolders/{contactFolderId}/contacts/{id}/photo
+GET /team/{id}/photo
 ```
 
 ### <a name="get-the-metadata-for-a-specific-photo-size"></a>Получение метаданных фотографии определенного размера
@@ -109,7 +119,7 @@ GET /groups/{id}/photos/{size}
 
 | Имя       | Тип | Описание|
 |:-----------|:------|:----------|
-| Authorization  | string  | Bearer {токен}. Обязательный. |
+| Authorization  | string  | Bearer {token}. Обязательный. |
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.
@@ -204,6 +214,61 @@ Content-type: application/json
     "height": 1
 }
 ```
+### <a name="example-4-get-the-metadata-of-the-team-photo"></a>Пример 4. Получение метаданных фотографии команды
+
+#### <a name="request"></a>Запрос
+
+Ниже приведен пример запроса на получение метаданных фотографии группы.
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo_metadata"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo
+```
+
+#### <a name="response"></a>Отклик
+
+Ниже приведен пример отклика.
+
+> **Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
+<!-- {
+  "blockType": "response"
+} -->
+
+```http
+HTTP/1.1 200 OK
+Content-type: application/json
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo/$entity",
+    "@odata.id": "https://graph.microsoft.com/v1.0/teams('172b0cce-e65d-44ce-9a49-91d9f2e8491e')/photo",
+    "@odata.mediaContentType": "image/jpeg",
+    "@odata.mediaEtag": "\"BA09D118\"",
+    "id": "240X240",
+    "width": 240,
+    "height": 240
+}
+```
+
+### <a name="example-5-get-the-team-photos-binary-data"></a>Пример 5. Получение двоичных данных фотографии группы
+
+Вот пример запроса для получения двоичных данных фотографии команды.
+
+#### <a name="request"></a>Запрос
+
+<!-- {
+  "blockType": "ignored",
+  "name": "get_team_photo"
+}-->
+```http
+GET https://graph.microsoft.com/v1.0/teams/172b0cce-e65d-44ce-9a49-91d9f2e8491e/photo/$value
+```
+
+#### <a name="response"></a>Отклик
+
+Содержит двоичные данные запрошенной фотографии. Код HTTP-отклика: 200.
 
 ## <a name="using-the-binary-data-of-the-requested-photo"></a>Использование двоичных данных запрошенной фотографии
 

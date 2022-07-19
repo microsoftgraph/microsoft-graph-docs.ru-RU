@@ -1,18 +1,18 @@
 ---
-title: Получение открытого расширения
+title: Получение openTypeExtension
 description: Получение открытого расширения (объекта openTypeExtension), указанного по имени или полному имени.
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 06f84bf05337f396f3004f69b314b07d24dd472b
-ms.sourcegitcommit: 4b852b92535fba8af9b2bbd6f55dc16aced9ef7e
+ms.openlocfilehash: bd845009302774ab8dfb7a64e36c8ea49049cdcf
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/09/2022
-ms.locfileid: "65971625"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855884"
 ---
-# <a name="get-open-extension"></a>Получение открытого расширения
+# <a name="get-opentypeextension"></a>Получение openTypeExtension
 
 Пространство имен: microsoft.graph
 
@@ -28,7 +28,7 @@ ms.locfileid: "65971625"
 
 |**Сценарий GET**|**Поддерживаемые ресурсы**|**Текст ответа**|
 |:-----|:-----|:-----|
-|Получение определенного расширения из экземпляра известного ресурса.| [](../resources/administrativeunit.md)Административная единица, [baseTask](../resources/basetask.md) (не рекомендуется), [baseTaskList](../resources/basetasklist.md) (не рекомендуется), [устройство](../resources/device.md), [событие](../resources/event.md)[, группа](../resources/group.md)[, событие](../resources/event.md) [группы, запись](../resources/post.md) группы, [сообщение](../resources/message.md), [организация](../resources/organization.md), [личный](../resources/contact.md) контакт, [пользователь](../resources/user.md), [todoTask](../resources/todotask.md), [todoTaskList](../resources/todotasklist.md)  | Только открытое расширение.|
+|Получение определенного расширения из экземпляра известного ресурса.| [Административная единица](../resources/administrativeunit.md) <br/> [baseTask](../resources/basetask.md) (не рекомендуется) <br/> [baseTaskList](../resources/basetasklist.md) (не рекомендуется) <br/> [device](../resources/device.md) <br/> [event](../resources/event.md) <br/> [group](../resources/group.md) <br/> [event](../resources/event.md) для групп <br/> [post](../resources/post.md) для групп <br/> [message](../resources/message.md) <br/> [organization](../resources/organization.md) <br/> [contact](../resources/contact.md) (личный контакт) <br/> [user](../resources/user.md) <br/> [todoTask](../resources/todotask.md) <br/> [todoTaskList](../resources/todotasklist.md)  | Только открытое расширение.|
 |Получение экземпляра известного ресурса, дополненного определенным расширением.|Административная единица, базовая задача, базовый список задач, устройство, событие, группа, событие группы, запись группы, сообщение, организация, личный контакт, пользователь, задача задач, список задач задач. |Экземпляр известного ресурса, дополненный открытым расширением.|
 |Поиск экземпляров ресурсов и их дополнение определенным расширением. | Базовая задача, базовый список задач, событие, групповое событие, запись группы, сообщение, личный контакт, задача задач, список задач задач |Экземпляры ресурса, дополненные открытым расширением.|
 
@@ -36,7 +36,7 @@ ms.locfileid: "65971625"
 
 В зависимости от того, какой ресурс содержит расширение, и типа запрашиваемого расширения (делегированного или для приложений), разрешение, указанное в приведенной ниже таблице, является наименее привилегированным разрешением, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Для приложений |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 | [baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [baseTaskList](../resources/basetasklist.md) (не рекомендуется)  | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
@@ -62,20 +62,20 @@ ms.locfileid: "65971625"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /administrativeUnits/{Id}/extensions/{extensionId}
-GET /devices/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/extensions/{extensionId}
-GET /groups/{Id}/events/{Id}/extensions/{extensionId}
-GET /groups/{Id}/threads/{Id}/posts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/messages/{Id}/extensions/{extensionId}
-GET /organization/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/contacts/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{todoTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{baseTaskId}/extensions/{extensionId}
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
+GET /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+GET /devices/{deviceId}/extensions/{extensionId}
+GET /users/{Id|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/extensions/{extensionId}
+GET /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+GET /organization/{organizationId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{todoTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{baseTaskId}/extensions/{extensionId}
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 ### <a name="get-a-known-resource-instance-expanded-with-a-matching-extension"></a>Получение известного экземпляра ресурса с соответствующим расширением 
@@ -84,15 +84,15 @@ GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/extensions/{extensionId}
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/todo/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}/tasks/{Id}?$expand=extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events/{eventId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts/{postId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages/{messageId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts/{contactId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/todo/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}?$expand=extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/tasks/lists/{listId}?$expand=extensions($filter=id eq '{extensionId}')
 ```
 
 
@@ -100,10 +100,10 @@ GET /users/{Id|userPrincipalName}/tasks/lists/{Id}?$expand=extensions($filter=id
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /devices/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /groups/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /organization/{Id}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
-GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /devices/{deviceId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /groups/{groupId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /organization/{organizationId}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
+GET /users/{userId|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId}')&$select=id,{property_1},{property_n}
 ```
 
 
@@ -113,11 +113,11 @@ GET /users/{Id|userPrincipalName}?$expand=extensions($filter=id eq '{extensionId
 
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /users/{Id|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /groups/{Id}/threads/{Id}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
-GET /users/{Id|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/events?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /groups/{groupId}/threads/{threadId}/posts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/messages?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
+GET /users/{userId|userPrincipalName}/contacts?$filter=Extensions/any(f:f/id eq '{extensionId}')&$expand=Extensions($filter=id eq '{extensionId}')
 ```
 
 >**Примечание.** В приведенном выше синтаксисе показаны некоторые распространенные способы определения коллекции или экземпляров ресурсов, расширение которых нужно получить. Все другие варианты синтаксиса, позволяющие определить эти коллекции или экземпляры ресурсов, поддерживают получение открытых расширений этих экземпляров или коллекций подобным образом.

@@ -1,29 +1,31 @@
 ---
-title: Создание printJob для принтераShare
-description: Создайте новый printJob для принтераShare.
+title: Создание задания печати для printerShare
+description: Создайте новое задание печати для printerShare.
 author: braedenp-msft
 ms.localizationpriority: medium
-ms.prod: universal-print
+ms.prod: cloud-printing
 doc_type: apiPageType
-ms.openlocfilehash: 1f15640fac2fd8a2a5e8b6c9d67c2fe0d03068cb
-ms.sourcegitcommit: 096bad7aaaa5d9b5ce698a524cb21f4070c7b4d6
+ms.openlocfilehash: 1fb07513516c0727e4a92b7b83d036887ecb99d1
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62056304"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855653"
 ---
-# <a name="create-printjob-for-a-printershare"></a>Создание printJob для принтераShare
+# <a name="create-printjob-for-a-printershare"></a>Создание задания печати для printerShare
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Создайте новый [printJob](../resources/printJob.md) для [принтераShare](../resources/printerShare.md). 
+Создайте новое [задание печати](../resources/printJob.md) для [printerShare](../resources/printerShare.md). 
+
+> **Примечание:** Пользователь может отправить до 10 000 заданий печати за 10 дней.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
-Помимо следующих разрешений, пользователь или клиент приложения должен иметь активную подписку на универсальную печать и иметь разрешение, дава которое предоставляет доступ [get printerShare.](printerShare-get.md)
+Помимо указанных ниже разрешений, у пользователя или клиента приложения должна быть активная подписка на универсальную печать и разрешение, предоставляющее доступ [к PrinterShare](printerShare-get.md) .
 
 |Тип разрешения | Разрешения (в порядке повышения привилегий) |
 |:---------------|:--------------------------------------------|
@@ -44,14 +46,14 @@ POST print/shares/{id}/jobs
 | Content-Type  | application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
-В теле запроса поставляем представление JSON объекта [printJob.](../resources/printjob.md)
-Объект printJob должен содержать только **конфигурацию.** Все свойства **конфигурации** являются недействительными.
-Все остальные поля, включая ИД рабочих мест и документов, задаются автоматически во время создания ресурсов.
+В тексте запроса добавьте представление объекта [printJob](../resources/printjob.md) в формате JSON.
+Объект printJob должен содержать только **конфигурацию**. Все свойства **конфигурации могут** иметь значение NULL.
+Все остальные поля, включая идентификаторы заданий и документов, устанавливаются автоматически во время создания ресурса.
 
-Сейчас универсальный шрифт поддерживает только одну **печатьDocument на** **объект printJob.**
+Сейчас универсальная печать поддерживает только один **объект printDocument** для **каждого объекта printJob** .
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код отклика и объект printJob и связанный с ним `201 Created` [шрифтDocument](../resources/printDocument.md) в тексте ответа. [](../resources/printjob.md) 
+В случае успешного выполнения этот метод возвращает `201 Created` код отклика, объект [printJob](../resources/printjob.md) и связанный [printDocument](../resources/printDocument.md) в тексте отклика. 
 ## <a name="example"></a>Пример
 ### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
@@ -121,7 +123,7 @@ Content-type: application/json
 ---
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа.
+Ниже приведен пример отклика.
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
 <!-- {

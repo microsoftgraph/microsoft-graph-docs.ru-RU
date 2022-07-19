@@ -1,30 +1,35 @@
 ---
 title: Создание bookingAppointment
-description: Создание нового bookingAppointment для указанного bookingbusiness.
+description: Создайте новое bookingAppointment для указанного объекта bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 8c967b78bb7e3d09aae73268011bc77f34f63d05
-ms.sourcegitcommit: efa06c63cd3154bcc7ecc993011f314c2dea9a92
+ms.openlocfilehash: 84a91ac1e3bb289e085d8bc07a5094e41512eb4a
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63368254"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856346"
 ---
 # <a name="create-bookingappointment"></a>Создание bookingAppointment
 
 Пространство имен: microsoft.graph
 
-Создайте [новое bookingAppointment](../resources/bookingappointment.md) для указанного [bookingBusiness](../resources/bookingbusiness.md).
+Создайте [новое bookingAppointment](../resources/bookingappointment.md) для указанного [объекта bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
+|Приложение | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
+
+> [!NOTE]
+> При создании пользовательского приложения с использованием разрешений приложения необходимо выполнить проверку [бизнес-правил](/graph/bookingsbusiness-business-rules).
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
@@ -32,27 +37,32 @@ ms.locfileid: "63368254"
 POST /solutions/bookingBusinesses/{id}/appointments
 
 ```
+
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя       | Описание|
 |:---------------|:----------|
-| Авторизация  | Bearer {код}. Обязательно.|
+| Авторизация  | Носитель {code}. Обязательно.|
 
 ## <a name="request-body"></a>Текст запроса
 
-В теле запроса указать JSON-представление [объекта bookingAppointment](../resources/bookingappointment.md) .
+В тексте запроса добавьте представление объекта [bookingAppointment](../resources/bookingappointment.md) в формате JSON.
 
-Если максимальное число клиентов (**maximumAttedeesCount**), разрешенных в службе, превышает 1:[](../resources/bookingservice.md)
+Если максимальное число клиентов (**maximumAttedeesCount**), разрешенное в службе, больше 1:[](../resources/bookingservice.md)
 
-- Убедитесь, что клиенты существуют в календаре бронирования. Если этого не сделать, создайте с помощью операции [Create bookingCustomer](bookingbusiness-post-customers.md) .
+- Убедитесь, что клиенты существуют в календаре резервирования. Если это не так, создайте его с помощью [операции Create bookingCustomer](bookingbusiness-post-customers.md) .
 
-- Передай действительные удостоверения клиентов при создании или обновлении встречи. Если удостоверение клиента не допустимо, этот клиент не будет включен в объект назначения.
+- Передайте действительные идентификаторы клиентов при создании или обновлении встречи. Если недопустимый идентификатор клиента, он не будет включен в объект встречи.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код `201 Created` отклика и [объект bookingAppointment](../resources/bookingappointment.md) в тексте ответа.
+
+В случае успешного выполнения этот метод возвращает код `201 Created` отклика и объект [bookingAppointment](../resources/bookingappointment.md) в тексте отклика.
 
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
-Ниже приведен пример запроса. Это назначение не предполагает бронирование определенных сотрудников.
+
+Ниже приведен пример запроса. Эта встреча не включает резервирование определенных сотрудников.
 
 <!-- {
   "blockType": "request"
@@ -185,6 +195,7 @@ Content-type: application/json
 ```
 
 ### <a name="response"></a>Отклик
+
 Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
@@ -327,5 +338,3 @@ Content-type: application/json
   ]
 }
 -->
-
-

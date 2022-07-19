@@ -1,22 +1,22 @@
 ---
-title: Получить bookingCustomQuestion
-description: Ознакомьтесь с свойствами и отношениями объекта bookingCustomQuestion.
+title: Получение bookingCustomQuestion
+description: Чтение свойств и связей объекта bookingCustomQuestion.
 author: razortbone
 ms.localizationpriority: medium
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: cfc83806f3186e347b62afabcbddf52c8e16e620
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: 3e37db41f4565ee77568336b13e5d0aa155eb00d
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014119"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856003"
 ---
-# <a name="get-bookingcustomquestion"></a>Получить bookingCustomQuestion
+# <a name="get-bookingcustomquestion"></a>Получение bookingCustomQuestion
 
 Пространство имен: microsoft.graph
 
-Ознакомьтесь с свойствами и отношениями объекта [bookingCustomQuestion.](../resources/bookingcustomquestion.md)
+Чтение свойств и связей объекта [bookingCustomQuestion](../resources/bookingcustomquestion.md) .
 
 ## <a name="permissions"></a>Разрешения
 
@@ -26,7 +26,7 @@ ms.locfileid: "62014119"
 | :------------------------------------- | :------------------------------------------------------------------------------------------------ |
 | Делегированные (рабочая или учебная учетная запись)     | Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All |
 | Делегированные (личная учетная запись Майкрософт) | Не поддерживается.                                                                                    |
-| Для приложений                            | Не поддерживается.                                                                                    |
+| Для приложений   | Не поддерживается. |
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +41,7 @@ GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingC
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
-Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в $count и $expand [параметров запроса OData.](/graph/query-parameters)
+Этот метод поддерживает некоторые параметры запросов OData для настройки отклика. Общие сведения см. в $count и $expand [параметров запроса OData](/graph/query-parameters).
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -49,13 +49,13 @@ GET /solutions/bookingBusinesses/{bookingBusinessesId}/customQuestions/{bookingC
 | :------------ | :------------------------ |
 | Авторизация | Bearer {token}. Обязательный. |
 
-## <a name="request-body"></a>Тело запроса
+## <a name="request-body"></a>Текст запроса
 
 Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingCustomQuestion](../resources/bookingcustomquestion.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingCustomQuestion](../resources/bookingcustomquestion.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 

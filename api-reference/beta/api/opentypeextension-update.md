@@ -1,18 +1,18 @@
 ---
-title: Обновление открытого расширения
+title: Обновление openTypeExtension
 description: 'Обновите открытое расширение (объект openTypeExtension), используя свойства в тексте запроса:'
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: acd04e9d1bd24bcd87228a8b29c1f9154f02c5d9
-ms.sourcegitcommit: ffa80f25d55aa37324368b6491d5b7288797285f
+ms.openlocfilehash: 06f6b02831138d00f02f412e9355b8547f536309
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65820751"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855660"
 ---
-# <a name="update-open-extension"></a>Обновление открытого расширения
+# <a name="update-opentypeextension"></a>Обновление openTypeExtension
 
 Пространство имен: microsoft.graph
 
@@ -33,7 +33,7 @@ ms.locfileid: "65820751"
 
 В зависимости от ресурса, в котором было создано расширение, и запрашиваемого типа разрешения (делегированное или приложение), разрешение, указанное в следующей таблице, является наименее привилегированным, необходимым для вызова этого API. Чтобы получить дополнительные сведения, в том числе о [соблюдении осторожности](/graph/auth/auth-concepts#best-practices-for-requesting-permissions) перед выбором разрешений с повышенными привилегиями, найдите следующие разрешения в разделе [Разрешения](/graph/permissions-reference).
 
-| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Application |
+| Поддерживаемый ресурс | Делегированное (рабочая или учебная учетная запись) | Делегированное (личная учетная запись Майкрософт) | Приложение |
 |:-----|:-----|:-----|:-----|
 | [baseTask](../resources/basetask.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
 | [baseTasklist](../resources/basetasklist.md) (не рекомендуется) | Tasks.ReadWrite | Tasks.ReadWrite | Не поддерживается |
@@ -55,31 +55,25 @@ ms.locfileid: "65820751"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-PATCH /administrativeUnits/{Id}/extensions/{extensionId}
-PATCH /devices/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/extensions/{extensionId}
-PATCH /groups/{id}/events/{id}/extensions/{extensionId}
-PATCH /groups/{id}/threads/{id}/posts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/messages/{id}/extensions/{extensionId}
-PATCH /organization/{Id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/contacts/{id}/extensions/{extensionId}
-PATCH /users/{id|userPrincipalName}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/todo/lists/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/tasks/{Id}/extensions/{extensionId}
-PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
+PATCH /administrativeUnits/{administrativeUnitId}/extensions/{extensionId}
+PATCH /devices/{deviceId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/extensions/{extensionId}
+PATCH /groups/{groupId}/events/{eventId}/extensions/{extensionId}
+PATCH /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/messages/{messageId}/extensions/{extensionId}
+PATCH /organization/{organizationId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/contacts/{contactId}/extensions/{extensionId}
+PATCH /users/{userId|userPrincipalName}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/todo/lists/{listId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/tasks/{taskId}/extensions/{extensionId}
+PATCH /users/me/tasks/lists/{listId}/extensions/{extensionId}
 ```
 
 >**Примечание:** В приведенном выше синтаксисе показаны некоторые распространенные способы идентификации экземпляра ресурса для обновления расширения в нем. Все остальные синтаксис, позволяющие определить эти экземпляры ресурсов, поддерживают обновление открытых расширений в них аналогичным образом.
 
 См. раздел [Тело запроса](#request-body) о том, как включить в тело запроса специальные данные для изменения или дополнения этого расширения.
-
-## <a name="path-parameters"></a>Параметры пути
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|id|string|Уникальный идентификатор экземпляра в соответствующей коллекции. Обязательный.|
-|extensionId|string|Этот параметр может быть именем расширения, которое представляет собой уникальный текстовый идентификатор для расширения, либо полным именем, в котором сцеплены тип расширения и уникальный текстовый идентификатор. Полное имя возвращается в свойстве `id` при создании расширения. Обязательный.|
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя       | Значение |
@@ -94,7 +88,7 @@ PATCH /users/me/tasks/lists/{Id}/extensions/{extensionId}
 | Имя       | Значение |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %уникальная_строка% |
+| extensionName | Уникальная строка |
 
 ## <a name="response"></a>Отклик
 

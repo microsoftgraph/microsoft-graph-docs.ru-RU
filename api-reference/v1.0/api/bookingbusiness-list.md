@@ -1,60 +1,68 @@
 ---
-title: Список bookingBusinesses
-description: Получите коллекцию объектов bookingbusiness, созданных для клиента.
+title: Перечисление bookingBusinesses
+description: Получение коллекции объектов bookingBusiness, созданных для клиента.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 936a34a17657ee7cfc97851772d4c9e8b1e85208
-ms.sourcegitcommit: 086e9a2ccaef411f9471cca164a79197bb254521
+ms.openlocfilehash: deed802ca412e3b44e4e16e2798fb82af60ae6ab
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "62014231"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856024"
 ---
-# <a name="list-bookingbusinesses"></a>Список bookingBusinesses
+# <a name="list-bookingbusinesses"></a>Перечисление bookingBusinesses
 
 Пространство имен: microsoft.graph
 
-Получите коллекцию [объектов bookingBusiness,](../resources/bookingbusiness.md) созданных для клиента.
+Получение коллекции объектов [bookingBusiness](../resources/bookingbusiness.md) , созданных для клиента.
 
-Эта операция возвращает только **id** и **displayName** каждого бизнеса Microsoft Bookings в коллекции. Для соображений производительности он не возвращает другие свойства. Вы можете получить другие свойства бизнеса Microsoft Bookings, указав его **id** в [операции GET.](bookingbusiness-get.md)
-
+Эта операция возвращает только **идентификатор и** **displayName** каждого Microsoft Bookings в коллекции. Для соображений производительности он не возвращает другие свойства. Вы можете получить другие свойства компании Bookings, указав его **идентификатор** в операции [GET](bookingbusiness-get.md) .
 
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Приложение | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
 GET /solutions/bookingBusinesses
 ```
-## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
 
-Этот метод также поддерживает `query` параметр, который принимает значение строки. Этот параметр ограничивает результаты GET предприятиями, которые соответствуют указанной строке. Дополнительные сведения см. в [примере](#request-2).
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
+
+Этот метод поддерживает $count и $expand параметров [запроса OData](/graph/query-parameters) для настройки ответа.
+
+Этот метод также поддерживает параметр `query` , который принимает строковое значение. Этот параметр ограничивает результаты GET организациями, которые соответствуют указанной строке. Дополнительные сведения см. в [примере](#request-2).
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` [объектов bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [bookingBusiness](../resources/bookingbusiness.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-bookings-businesses-in-a-tenant"></a>Пример 1. Получить заказы предприятий в клиенте
+### <a name="example-1-get-bookings-businesses-in-a-tenant"></a>Пример 1. Получение компаний Bookings в клиенте
+
 #### <a name="request-1"></a>Запрос 1
-В следующем примере получается бизнес Bookings в клиенте.
+
+Следующий пример возвращает компании Bookings в клиенте.
 
 <!-- {
   "blockType": "request"
@@ -64,7 +72,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses
 ```
 
 #### <a name="response-1"></a>Отклик 1
-Ниже приведен пример ответа.
+
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,
@@ -90,9 +99,11 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-use-query-to-get-one-or-more-matching-bookings-businesses-in-a-tenant"></a>Пример 2. Использование "запроса", чтобы получить одно или несколько совпадающих предприятий Bookings в клиенте
+### <a name="example-2-use-query-to-get-one-or-more-matching-bookings-businesses-in-a-tenant"></a>Пример 2. Использование запроса для получения одного или нескольких соответствующих компаний Bookings в клиенте
+
 #### <a name="request-2"></a>Запрос 2
-В следующем примере показано, как использовать параметр для получения одного или более совпадающих предприятий `query` Bookings в клиенте.
+
+В следующем примере показано, как использовать параметр `query` для получения одного или нескольких соответствующих компаний Bookings в клиенте.
 
 <!-- {
   "blockType": "request"
@@ -102,7 +113,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses?query=Adventure
 ```
 
 #### <a name="response-2"></a>Ответ 2
-Ниже приведен пример ответа.
+
+Ниже приведен пример отклика.
 <!-- {
   "blockType": "response",
   "truncated": true,

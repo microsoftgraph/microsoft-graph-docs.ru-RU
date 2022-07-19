@@ -1,18 +1,18 @@
 ---
-title: Создание открытого расширения
+title: Создание openTypeExtension
 description: Создание открытого расширения (объект openTypeExtension) и добавление настраиваемых свойств
 ms.localizationpriority: medium
 author: dkershaw10
 doc_type: apiPageType
 ms.prod: extensions
-ms.openlocfilehash: 6dffafea076698b90a5adfe1dd83114c7e2eadcc
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 67fcf14d2e22ee6fd1a1c215c91a67b3bb40ec84
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555270"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855702"
 ---
-# <a name="create-open-extension"></a>Создание открытого расширения
+# <a name="create-opentypeextension"></a>Создание openTypeExtension
 
 Пространство имен: microsoft.graph
 
@@ -20,7 +20,7 @@ ms.locfileid: "66555270"
 
 [!INCLUDE [todo-deprecate-basetaskapi-sharedfeature](../includes/todo-deprecate-basetaskapi-sharedfeature.md)]
 
-Создание открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса. Можно создать [открытое расширение в](/graph/api/opentypeextension-post-opentypeextension) экземпляре ресурса и сохранить пользовательские данные во всех операциях, за исключением определенных ресурсов. [Дополнительные сведения см](/graph/known-issues#extensions). в известных ограничениях открытых расширений.
+Создание открытого расширения (объекта [openTypeExtension](../resources/opentypeextension.md)) и добавление настраиваемых свойств в новый или существующий экземпляр ресурса. Вы можете [создать открытое расширение](/graph/api/opentypeextension-post-opentypeextension) в экземпляре ресурса и сохранить в нем пользовательские данные в рамках одной операции, за исключением определенных ресурсов. См. [известные ограничения открытых расширений](/graph/known-issues#extensions) для получения дополнительных сведений.
 
 В таблице раздела [Разрешения](#permissions) перечислены ресурсы, поддерживающие открытые расширения.
 
@@ -56,15 +56,15 @@ ms.locfileid: "66555270"
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /users/{id|userPrincipalName}/events
-POST /users/{id|userPrincipalName}/messages
-POST /groups/{id}/events
-POST /groups/{id}/threads/{id}/posts/{id}/reply
-POST /users/{id|userPrincipalName}/contacts
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/todo/lists
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks
-POST /users/{id|userPrincipalName}/tasks/lists
+POST /users/{userId|userPrincipalName}/events
+POST /users/{userId|userPrincipalName}/messages
+POST /groups/{userId}/events
+POST /groups/{userId}/threads/{threadId}/posts/{postId}/reply
+POST /users/{userId|userPrincipalName}/contacts
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/todo/lists
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks
+POST /users/{userId|userPrincipalName}/tasks/lists
 ```
 
 >**Примечание.** В этом синтаксисе показаны некоторые распространенные способы создания поддерживаемых экземпляров ресурса. Все другие варианты синтаксиса POST, позволяющие создавать эти экземпляры ресурса, поддерживают создание открытых расширений этих экземпляров подобным образом.
@@ -77,37 +77,31 @@ POST /users/{id|userPrincipalName}/tasks/lists
 
 <!-- { "blockType": "ignored" } -->
 ```http
-POST /administrativeunits/{id}/extensions
-POST /devices/{id}/extensions
-POST /users/{id|userPrincipalName}/events/{id}/extensions
-POST /groups/{id}/extensions
-POST /groups/{id}/events/{id}/extensions
-POST /groups/{id}/threads/{id}/posts/{id}/extensions
-POST /users/{id|userPrincipalName}/messages/{id}/extensions
-POST /organization/{id}/extensions
-POST /users/{id|userPrincipalName}/contacts/{id}/extensions
-POST /users/{id|userPrincipalName}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/todo/lists/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/tasks/{id}/extensions
-POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
+POST /administrativeunits/{administrativeUnitId}/extensions
+POST /devices/{deviceId}/extensions
+POST /users/{userId|userPrincipalName}/events/{eventId}/extensions
+POST /groups/{groupId}/extensions
+POST /groups/{groupId}/events/{eventId}/extensions
+POST /groups/{groupId}/threads/{threadId}/posts/{postId}/extensions
+POST /users/{userId|userPrincipalName}/messages/{messageId}/extensions
+POST /organization/{organizationId}/extensions
+POST /users/{userIdd|userPrincipalName}/contacts/{contactId}/extensions
+POST /users/{userId|userPrincipalName}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/todo/lists/{listId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/tasks/{taskId}/extensions
+POST /users/{userId|userPrincipalName}/tasks/lists/{listId}/extensions
 ```
 
 >**Примечание.** В этом синтаксисе показаны некоторые распространенные способы определения экземпляра ресурса, чье расширение нужно удалить. Все другие варианты синтаксиса, позволяющие определить эти экземпляры ресурса, поддерживают удаление открытых расширений этих экземпляров подобным образом.
 
 В разделе [Текст запроса](#request-body) показано, как включить _расширение_ в текст запроса.
 
-## <a name="path-parameters"></a>Параметры пути
-
-|**Параметр**|**Тип**|**Описание**|
-|:-----|:-----|:-----|
-|id|string|Уникальный идентификатор объекта в соответствующей коллекции. Обязательный.|
-
 ## <a name="request-headers"></a>Заголовки запросов
 
 | Имя       | Значение |
 |:---------------|:----------|
-| Авторизация | Bearer {токен}. Обязательный. |
+| Авторизация | Bearer {token}. Обязательный. |
 | Content-Type | application/json |
 
 ## <a name="request-body"></a>Текст запроса
@@ -117,7 +111,7 @@ POST /users/{id|userPrincipalName}/tasks/lists/{id}/extensions
 | Имя       | Значение |
 |:---------------|:----------|
 | @odata.type | microsoft.graph.openTypeExtension |
-| extensionName | %уникальная_строка% |
+| extensionName | Уникальная строка |
 
 При создании расширения в _новом_ экземпляре ресурса предоставьте не только объект **openTypeExtension**, но и представление JSON соответствующих свойств для создания этого экземпляра ресурса.
 

@@ -5,12 +5,12 @@ author: angelgolfer-ms
 ms.localizationpriority: medium
 ms.prod: w10
 doc_type: resourcePageType
-ms.openlocfilehash: ef9b235a175b3304b9354beddc67f59eb3994cf1
-ms.sourcegitcommit: 10b45b3e666bf6b438803885128bc2f0fa2fa994
+ms.openlocfilehash: ce20f9d9a15acbf5c27402eb018b4bbc5ad85b97
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65653499"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856325"
 ---
 # <a name="admin-resource-type"></a>Тип ресурса admin
 
@@ -26,6 +26,7 @@ ms.locfileid: "65653499"
 ## <a name="relationships"></a>Связи
 |Связь|Тип|Описание|
 |:---|:---|:---|
+| reportSettings |[microsoft.graph.adminReportSettings](../resources/adminreportsettings.md)|Контейнер для административных ресурсов для управления отчетами.|
 | serviceAnnouncement | [serviceAnnouncement](serviceannouncement.md) | Контейнер для ресурсов связи со службами. Только для чтения. |
 | sharepoint |[microsoft.graph.tenantAdmin.sharepoint](../resources/tenantadmin-sharepoint.md)|Контейнер для административных ресурсов для управления параметрами на уровне клиента для SharePoint и OneDrive.|
 | windows |[microsoft.graph.windowsUpdates.windows](../resources/windowsupdates-windows.md)|Контейнер для всех функций клиентский компонент Центра обновления Windows развертывания для бизнеса. Только для чтения.|

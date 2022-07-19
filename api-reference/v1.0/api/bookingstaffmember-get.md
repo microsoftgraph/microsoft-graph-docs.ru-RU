@@ -1,50 +1,61 @@
 ---
-title: Получить bookingStaffMember
-description: Получите свойства и отношения bookingStaffMember в указанном bookingBusiness.
+title: Получение bookingStaffMember
+description: Получение свойств и связей объекта bookingStaffMember в указанном bookingBusiness.
 ms.localizationpriority: medium
 author: arvindmicrosoft
 ms.prod: bookings
 doc_type: apiPageType
-ms.openlocfilehash: 43a1d0fbcb8d04bb7d61cbb94304d83efdc33197
-ms.sourcegitcommit: c47e3d1f3c5f7e2635b2ad29dfef8fe7c8080bc8
+ms.openlocfilehash: 084b4c31418475ff4404ccb1d9e64a32ed28dbe4
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61526831"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855989"
 ---
-# <a name="get-bookingstaffmember"></a>Получить bookingStaffMember
+# <a name="get-bookingstaffmember"></a>Получение bookingStaffMember
 
 Пространство имен: microsoft.graph
 
-Получите свойства и отношения [bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness.](../resources/bookingbusiness.md)
+Получение свойств и связей [объекта bookingStaffMember](../resources/bookingstaffmember.md) в указанном [bookingBusiness](../resources/bookingbusiness.md).
+
 ## <a name="permissions"></a>Разрешения
+
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
 
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
 |Делегированные (рабочая или учебная учетная запись) |  Bookings.Read.All, BookingsAppointment.ReadWrite.All, Bookings.ReadWrite.All, Bookings.Manage.All   |
 |Делегированные (личная учетная запись Майкрософт) | Не поддерживается.   |
-|Для приложений | Не поддерживается.  |
+|Приложение | BookingsAppointment.ReadWrite.All, Bookings.Read.All  |
 
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /bookingBusinesses/{id}/staffMembers/{id}
+GET /solutions/bookingBusinesses/{id}/staffMembers/{id}
 ```
+
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
-Этот метод поддерживает параметры $count и $expand [OData](/graph/query-parameters) для настройки ответа.
+
+Этот метод поддерживает $count и $expand параметров [запроса OData](/graph/query-parameters) для настройки ответа.
 
 ## <a name="request-headers"></a>Заголовки запросов
+
 | Имя      |Описание|
 |:----------|:----------|
 | Авторизация  | Bearer {code}|
 
 ## <a name="request-body"></a>Текст запроса
+
 Не указывайте текст запроса для этого метода.
+
 ## <a name="response"></a>Отклик
-В случае успешной работы этот метод возвращает код отклика и `200 OK` [объект bookingStaffMember](../resources/bookingstaffmember.md) в тексте ответа.
+
+В случае успешного выполнения этот метод возвращает код `200 OK` отклика и объект [bookingStaffMember](../resources/bookingstaffmember.md) в тексте отклика.
+
 ## <a name="example"></a>Пример
+
 ### <a name="request"></a>Запрос
+
 Ниже приведен пример запроса.
 
 <!-- {
@@ -55,7 +66,8 @@ GET https://graph.microsoft.com/v1.0/solutions/bookingBusinesses/Contosolunchdel
 ```
 
 ### <a name="response"></a>Отклик
-Ниже приведен пример ответа. 
+
+Ниже приведен пример отклика. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 <!-- {
