@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: preetikr
 ms.prod: security
 doc_type: resourcePageType
-ms.openlocfilehash: 62e721ba3cfb87e7f3c4dea0975031af5f228a2a
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 7c45ed1f157dbd634eb27fc633deb41ee996f2b6
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66838670"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855891"
 ---
 # <a name="use-the-microsoft-graph-security-api"></a>Использование Microsoft Graph Security API
 
@@ -69,7 +69,9 @@ Microsoft Graph Security API включает указанные ниже клю
 
 **Метки**. Метки защиты информации предоставляют сведения о правильном применении метки конфиденциальности к информации. API метки защиты информации описывает настройку меток конфиденциальности, применяемых к пользователю или клиенту.
 
-**Оценка угроз**. API оценки угроз Microsoft Graph позволяет организациям оценить угрозу, возникшую для любого пользователя в клиенте. Благодаря этому пользователи могут сообщать в корпорацию Майкрософт о полученной нежелательной почте, фишинговых URL-адресах и вредоносных вложениях. Результат проверки политики и результат повторного сканирования может помочь администраторам клиента понять заключение сканирования угроз и настроить политику организации.
+**Оценка угроз**. API оценки угроз Microsoft Graph позволяет организациям оценить угрозу, возникшую для любого пользователя в клиенте. Благодаря этому пользователи могут сообщать в корпорацию Майкрософт о полученной нежелательной или подозрительной почте, фишинговых URL-адресах и вредоносных вложениях. Корпорация Майкрософт проверяет соответствующий пример и используемые политики организации перед оформлением результата, чтобы администраторы клиентов могли понять решение о проверке угроз и скорректировать свою политику организации. Они также могут использовать его для создания отчетов о допустимых сообщениях электронной почты, чтобы предотвратить их блокировку.
+
+> **Примечание.** Вместо этого рекомендуется использовать API [отправки информации об угрозах](https://github.com/microsoftgraph/microsoft-graph-docs/pull/16242/files#threat-submission).
 
 ## <a name="secure-score"></a>Оценка безопасности
 
@@ -93,6 +95,11 @@ Microsoft Graph Security API включает указанные ниже клю
 
 Поддержка в других службах безопасности Майкрософт появится в ближайшее время.
 
+## <a name="threat-submission"></a>Отправка информации об угрозах
+
+API отправки информации об угрозах Microsoft Graph позволяет организациям отправлять сведения об угрозе, возникшей для любого пользователя в клиенте. Благодаря этому пользователи могут сообщать в корпорацию Майкрософт о полученной нежелательной или подозрительной почте, фишинговых URL-адресах и вредоносных вложениях. Корпорация Майкрософт проверяет отправляемый объект в соответствии с действующими политиками организации и отправляет его специалистам по оценке. Результат таких действий поможет администраторам клиента понять решение касательно сканирования угроз и скорректировать политику организации. Администраторы могут также, учитывая результаты, сообщить о допустимых сообщениях электронной почты, чтобы предотвратить их блокировку.
+
+> **Примечание.** Рекомендуется использовать этот API вместо нерекомендуемого API оценки угроз для Information Protection. API отправки информации об угрозах обеспечивает унифицированные возможности отправки сведений об угрозах безопасности, а также единую поддержку результатов, поддержку запросов касательно отправляемых пользователями данных, поддержку списков блокировок и разрешений для клиента, поддержку проверки администратором и поддержку режима только для приложений.
 
 ## <a name="common-use-cases"></a>Основные варианты использования
 
@@ -127,6 +134,22 @@ Microsoft Graph Security API включает указанные ниже клю
 |Отправка индикаторов аналитики угроз|[Отправка объектов tiIndicator](../api/tiindicator-submittiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/submitTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/submitTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) |
 |Обновление индикаторов аналитики угроз|[Обновление объекта tiIndicator](../api/tiindicator-update.md) </br>[Обновление нескольких объектов tiIndicator](../api/tiindicator-updatetiindicators.md)| [https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=POST&version=beta&GraphUrl=https://graph.microsoft.com) </br>[https://graph.microsoft.com/beta/security/tiIndicators/updateTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/updateTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
 |Удаление индикаторов аналитики угроз|[Удаление объекта tiIndicator](../api/tiindicator-delete.md) </br>[Удаление нескольких объектов tiIndicator](../api/tiindicator-deletetiindicators.md) </br>[Удаление объекта tiIndicator с помощью externalId](../api/tiindicator-deletetiindicatorsbyexternalid.md)| DELETE </br>[https://graph.microsoft.com/beta/security/tiIndicators/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com) </br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicators](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicators&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)</br>POST</br>[https://graph.microsoft.com/beta/security/tiIndicators/deleteTiIndicatorsByExternalId](https://developer.microsoft.com/graph/graph-explorer?request=security/tiIndicators/deleteTiIndicatorsByExternalId&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+| **Отправка информации об угрозах**|||
+|Получение информации об угрозах, связанных с электронной почтой|[Get emailThreat](../api/security-emailthreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreats/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Список отправленных сведений об угрозах, связанных с электронной почтой | [List emailThreats](../api/security-emailthreatsubmission-list.md) | [https://graph.microsoft.com/beta/threatSubmission/emailThreats](https://developer.microsoft.com/graph/graph-explorer?request=threatSubmission/emailThreats&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Создание отправляемой информации об угрозах, связанных с электронной почтой|[Create emailThreat](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreats](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/emailThreats&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Проверка отправленной информации об угрозах, связанных с электронной почтой|[Review emailThreat](../api/security-emailthreatsubmission-review.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreats/{id}/review](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission//emailThreats/{id}/review&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Получение информации об угрозах, связанных с файлами|[Get fileThreat](../api/security-filethreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/fileThreats/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/urlThreats/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Список отправленных сведений об угрозах, связанных с файлами | [List fileThreats](../api/security-filethreatsubmission-list.md) | [https://graph.microsoft.com/beta/threatSubmission/urlThreats](https://developer.microsoft.com/graph/graph-explorer?request=threatSubmission/fileThreats&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Создание отправляемой информации об угрозах, связанных с файлами|[Create fileThreat](../api/security-filethreatsubmission-post-fileThreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/fileThreats](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/fileThreats&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Получение информации об угрозах, связанных с URL-адресами|[Get urlThreat](../api/security-urlthreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/urlThreats/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/urlThreats/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Список отправленных сведений об угрозах, связанных с URL-адресами | [List urlThreats](../api/security-urlthreatsubmission-list.md) | [https://graph.microsoft.com/beta/security/threatSubmission/urlThreats](https://developer.microsoft.com/graph/graph-explorer?request=threatSubmission/urlThreats&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Создание отправляемой информации об угрозах, связанных с URL-адресами|[Create urlThreat](../api/security-urlthreatsubmission-post-urlthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/urlThreats](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/urlThreats&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Получение политики касательно отправляемой информации об угрозах, связанных с электронной почтой|[Get emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-get.md)| [https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Список политик касательно отправляемой информации об угрозах, связанных с электронной почтой | [List emailThreatSubmissionPolicies](../api/security-emailthreatsubmissionpolicy-list.md) | [https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies&method=GET&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Создание политики касательно отправляемой информации об угрозах, связанных с электронной почтой|[Create emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies](https://developer.microsoft.com/graph/graph-explorer?request=/security/threatSubmission/emailThreats&method=POST&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Обновление политики касательно отправляемой информации об угрозах, связанных с электронной почтой|[Update emailThreatSubmissionPolicy](../api/security-emailthreatsubmission-post-emailthreats.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=PATCH&version=beta&GraphUrl=https://graph.microsoft.com)|
+|Удаление политики касательно отправляемой информации об угрозах, связанных с электронной почтой|[Delete emailThreatSubmissionPolicy](../api/security-emailthreatsubmissionpolicy-delete.md)|[https://graph.microsoft.com/beta/security/threatSubmission/emailThreatSubmissionPolicies/{id}](https://developer.microsoft.com/graph/graph-explorer?request=security/threatSubmission/emailThreatSubmissionPolicies/{id}&method=DELETE&version=beta&GraphUrl=https://graph.microsoft.com)|
 
 Можно использовать [веб-перехватчиков](/graph/webhooks) Microsoft Graph, чтобы подписаться на получение уведомлений об обновлениях объектов Microsoft Graph Security API.
 

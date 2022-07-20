@@ -5,12 +5,12 @@ author: preetikr
 ms.localizationpriority: high
 ms.prod: security
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: f5525d2e37bc306c138f8b30010e62c2335cb703
-ms.sourcegitcommit: 432563e8c81e0f666752445474fe8eada26551e6
+ms.openlocfilehash: 71d2c8f16314b85f6878bf037c2c9a68d9eee097
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/18/2022
-ms.locfileid: "66837501"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856192"
 ---
 # <a name="microsoft-graph-security-api-overview"></a>Обзор Microsoft Graph Security API
 
@@ -33,6 +33,10 @@ Microsoft Graph Security API является промежуточной слу�
 - [Перетаскивание в рабочие процессы и схемы.](https://aka.ms/graphsecurityconnectorsblogpost) Используйте [соединители Microsoft Graph Security](/azure/connectors/connectors-integrate-security-operations-create-api-microsoft-graph-security) для [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), [Microsoft Flow](https://flow.microsoft.com/) и [PowerApps](https://powerapps.microsoft.com/).
 - [Получение данных в отчетах и панелях мониторинга.](https://aka.ms/graphsecuritypowerbiconnectorblogpost) Используйте [соединитель Microsoft Graph Security для Power BI](/power-bi/connect-data/desktop-connect-graph-security).
 - [Подключение с помощью записных книжек Jupyter.](https://jupyter.org/) Найдите [примеры записных книжек Jupyter](https://aka.ms/graphsecurityjupyternotebooks).  
+
+### <a name="submit-threats-and-trigger-whole-automation-flow"></a>Отправка информации об угрозах и активация всего потока автоматизации
+
+Единый API отправки информации об угрозах безопасности упрощает отправку информации об угрозах для разных решений, призванных обеспечивать безопасность. Это позволяет не только отправлять информацию об угрозах, но и получать результаты такой отправки и активировать нисходящие потоки оповещений. Новый единый API отправки информации об угрозах безопасности поддерживает как разрешения приложений, так и делегированные разрешения для создания новых решений для обеспечения безопасности.
 
 ### <a name="unify-and-standardize-alert-tracking"></a>Объединение и стандартизация отслеживания оповещений
 

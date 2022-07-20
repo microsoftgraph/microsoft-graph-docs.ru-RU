@@ -1,17 +1,17 @@
 ---
 title: Добавление пользовательских данных в ресурсы с помощью расширений
-description: Вы можете расширить Microsoft Graph данными своего приложения. Добавляйте настраиваемые свойства в ресурсы Microsoft Graph без необходимости во внешнем хранилище данных.
+description: Вы можете расширить Microsoft Graph данными своего приложения. Добавляйте настраиваемые свойства, чтобы хранить пользовательские данные в ресурсах Microsoft Graph без внешнего хранилища данных.
 author: dkershaw10
 ms.localizationpriority: high
 ms.custom: graphiamtop20
-ms.openlocfilehash: fca4c70795f06007b7d51bfaa2ccad6968fd9d16
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: a7d2a2eeba27877afe5c1aba4fbc416ad10d48c9
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554899"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856115"
 ---
-# <a name="add-custom-properties-to-resources-using-extensions"></a>Добавляйте пользовательские свойства к ресурсам с помощью расширений
+# <a name="add-custom-data-to-resources-using-extensions"></a>Добавление пользовательских данных в ресурсы с помощью расширений
 
 Microsoft Graph предоставляет единую конечную точку API для доступа к аналитическим данным и сведениям, ориентированным на людей, с помощью таких ресурсов, как [пользователь](/graph/api/resources/user) и [сообщение](/graph/api/resources/message). Вы также можете расширить Microsoft Graph, добавив настраиваемые свойства в экземпляры ресурсов без необходимости во внешнем хранилище данных.
 
@@ -133,7 +133,7 @@ POST https://graph.microsoft.com/v1.0/applications/30a5435a-1871-485c-8c7b-65f69
 
 ###### <a name="response"></a>Отклик
 
-Именованное свойство расширения каталога `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` создается с именем расширения, соответствующим следующему соглашению об именовании: *extension_{appId-без дефисов}_{extensionProperty-name}*.
+Именованное свойство расширения каталога `extension_b7d8e648520f41d3b9c0fdeb91768a0a_jobGroupTracker` создается с именем расширения, соответствующим следующему соглашению об именовании: *extension_{appId-without-hyphens}_{extensionProperty-name}*.
 
 ```http
 HTTP/1.1 201 Created
@@ -475,12 +475,10 @@ GET https://graph.microsoft.com/v1.0/users/3fbd929d-8c56-4462-851e-0eb9a7b3a2a5/
 
 Об известных ограничениях на использование расширений можно узнать в [соответствующем разделе](known-issues.md#extensions) статьи об известных проблемах.
 
-## <a name="see-also"></a>См. также
+## <a name="next-steps"></a>Дальнейшие действия
 
-- [Добавление настраиваемых свойств пользователям с помощью открытых расширений](extensibility-open-users.md)
-- [Добавление настраиваемых свойств в группы с помощью расширений схемы](extensibility-schema-groups.md)
-- [Домены Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/domains)
-- [Добавление и проверка домена для клиента Microsoft 365](https://office365support.ca/adding-and-verifying-a-domain-for-the-new-office-365/)
+- [Добавление пользовательских данных в ресурсы user с помощью открытых расширений](extensibility-open-users.md)
+- [Добавление пользовательских данных в группы с помощью расширений схемы](extensibility-schema-groups.md)
 
 
 <!-- Links -->

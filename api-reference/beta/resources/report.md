@@ -5,12 +5,12 @@ ms.localizationpriority: high
 ms.prod: reports
 author: sarahwxy
 doc_type: conceptualPageType
-ms.openlocfilehash: ed1f58f3243a0abc433b2407f61d04077469f896
-ms.sourcegitcommit: dae41f5828677b993ba89f38c1d1c42d91c0ba02
+ms.openlocfilehash: 937f1c18efe074a0fdec3dc02b31f393dd6ca40c
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65133694"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855637"
 ---
 # <a name="working-with-microsoft-365-usage-reports-in-microsoft-graph"></a>Работа с отчетами об использовании Microsoft 365 в Microsoft Graph
 
@@ -23,6 +23,10 @@ Microsoft Graph позволяет получить доступ к отчета
 ## <a name="authorization"></a>Авторизация
 
 Microsoft Graph позволяет управлять доступом к ресурсам, используя разрешения. Укажите разрешения, необходимые для доступа к отчетам, на портале Azure Active Directory (Azure AD). Дополнительные сведения см. в [справочнике по разрешениям Microsoft Graph](/graph/permissions-reference) и разделе [Разрешения для отчетов](/graph/permissions-reference#reports-permissions).
+
+## <a name="settings"></a>Settings
+
+В отчетах Microsoft 365 сведения о пользователях, такие как имена пользователей, группы и сайты, скрыты. Фактические значения не отображаются. API [adminReportSettings](../resources/adminreportsettings.md) позволяет контролировать отображение сведений о пользователях в отчетах.
 
 ## <a name="cloud-deployments"></a>Облачные развертывания
 

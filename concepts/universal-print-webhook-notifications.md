@@ -5,12 +5,12 @@ author: jahsu
 ms.localizationpriority: high
 ms.prod: cloud-printing
 ms.custom: scenarios:getting-started
-ms.openlocfilehash: 9c7319d55a8ea78fa08f5a21a8986b55a552a2f7
-ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
+ms.openlocfilehash: 098de14a7538ae9853d74f6b47ffeb3987645803
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66443790"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66856108"
 ---
 # <a name="subscribe-to-change-notifications-from-cloud-printing-apis-using-microsoft-graph"></a>Подписка на уведомления об изменениях из API облачной печати с использованием Microsoft Graph
 
@@ -37,6 +37,8 @@ ms.locfileid: "66443790"
 
 >[!NOTE]
 >Чтобы прослушивать уведомления об изменениях для события JobFetchable, не требуется ресурс **printTaskDefinition**.
+>
+>Приложение должно обрабатывать повторяющиеся уведомления.
 
 ### <a name="create-an-application-to-listen-to-notifications"></a>Создание приложения для прослушивания уведомлений
 
@@ -204,9 +206,11 @@ Content-Type: application/json
 ### <a name="what-are-applications-expected-to-do-after-receiving-a-change-notification"></a>Каковы предполагаемые действия приложений после получения уведомления об изменении?
 Приложения должны обрабатывать и подтверждать каждое полученное уведомление об изменении. Подробности см. в разделе [Обработка уведомлений об изменениях](./webhooks.md#processing-the-change-notification).
 
+### <a name="how-can-i-validate-the-authenticity-of-notifications"></a>Как проверить подлинность уведомлений?
+Подлинность уведомлений можно проверять, используя значения **clientState**, как описано в разделе [Обработка уведомления об изменении](./webhooks.md#processing-the-change-notification), или [маркеры проверки в уведомлении об изменении](./webhooks-with-resource-data.md#validation-tokens-in-the-change-notification).
+
 ### <a name="how-can-i-get-a-list-of-active-subscriptions"></a>Как получить список активных подписок?
 Сведения о том, как получить список подписок на веб-перехватчики, см. в разделе [Перечисление подписок](/graph/api/subscription-list).
-
 
 ## <a name="see-also"></a>См. также
 

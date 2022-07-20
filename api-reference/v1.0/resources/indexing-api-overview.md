@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: snlraju-msft
 ms.prod: search
 doc_type: conceptualPageType
-ms.openlocfilehash: b1090cbd0240f5d76bb22302822f30bb03b1c64f
-ms.sourcegitcommit: 6c04234af08efce558e9bf926062b4686a84f1b2
+ms.openlocfilehash: 61b3e3bccd96658e5682989f0a88097ff5217f28
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2021
-ms.locfileid: "59128307"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855849"
 ---
 # <a name="use-the-microsoft-search-api-to-index-data"></a>Индексирование данных с помощью API Поиска (Майкрософт)
 
@@ -41,7 +41,7 @@ ms.locfileid: "59128307"
 - Организациям доступно до 10 подключений.
 - Вы можете создавать только четыре `externalItem` элемента ресурсов в секунду.
 - Приложение может выполнять до четырех одновременных операций с подключением.
-- Емкость подключений ограничена до 700 000 элементов, или примерно 70 ГБ данных.
+- Максимальная емкость соединений составляет 5 000 000 элементов или ~350 ГБ данных.
 - Максимальный размер объекта `externalItem` составляет 4 МБ.
 - Сортировка результатов не поддерживается.
 

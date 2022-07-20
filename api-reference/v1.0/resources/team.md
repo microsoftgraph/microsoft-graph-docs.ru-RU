@@ -5,18 +5,16 @@ author: AkJo
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: resourcePageType
-ms.openlocfilehash: ad4cb5d1031c3c8f30e014ad99de01255e737937
-ms.sourcegitcommit: 77d2ab5018371f153d47cc1cd25f9dcbaca28a95
+ms.openlocfilehash: 5024de8d0788e0e3c02975105826813369d8dae8
+ms.sourcegitcommit: af7a33e92d0e84e6108dd5d9466f869061ac0c97
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63334333"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855982"
 ---
 # <a name="team-resource-type"></a>Тип ресурса team
 
 Пространство имен: microsoft.graph
-
-
 
 Команда в Microsoft Teams — это коллекция объектов [channel](channel.md).
 Канал представляет тему и логически обособляет обсуждение в команде.
@@ -86,9 +84,10 @@ ms.locfileid: "63334333"
 |channels|Коллекция [channel](channel.md)|Коллекция каналов и сообщений, связанных с командой.|
 |installedApps|[teamsAppInstallation](teamsappinstallation.md) collection|Приложения, установленные в команде.|
 |members|Коллекция [conversationMember](../resources/conversationmember.md)|Участники и владельцы команды.|
-|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. | 
-|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. | 
+|operations|Коллекция [teamsAsyncOperation](teamsasyncoperation.md)| Асинхронные операции, которые выполнялись или выполняются для этой команды. |
+|[primaryChannel](../api/team-get-primarychannel.md)|[channel](channel.md)| Общий канал для команды. |
 |schedule|[schedule](schedule.md)| Расписание смен для команды.|
+|photo|[profilePhoto](../resources/profilephoto.md)| Фотография профиля для команды. |
 |шаблон|[teamsTemplate](teamstemplate.md)| Шаблон, из которого создана команда. См. [доступные шаблоны](/MicrosoftTeams/get-started-with-teams-templates). |
 
 ## <a name="json-representation"></a>Представление JSON
@@ -132,4 +131,3 @@ ms.locfileid: "63334333"
 - [Работа с Microsoft Teams при помощи API Microsoft Graph](teams-api-overview.md)
 - [Создание группы с командой](/graph/teams-create-group-and-team)
 - [Перечисление всех команд](/graph/teams-list-all-teams)
-
