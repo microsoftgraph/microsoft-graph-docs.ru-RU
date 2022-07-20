@@ -4,12 +4,12 @@ description: Microsoft Graph предоставляет детализирова
 author: jackson-woods
 ms.localizationpriority: high
 ms.custom: graphiamtop20, scenarios:getting-started
-ms.openlocfilehash: 396986fb8519a8bf36c3dbab4827ca9103032915
-ms.sourcegitcommit: a08b7dc29c4fd9b5c1c805e47ca824c633f3128f
+ms.openlocfilehash: f71c850321addb0c92e5dd6aec45855cc474d8a4
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66698061"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883079"
 ---
 # <a name="microsoft-graph-permissions-reference"></a>Справочник по разрешениям Microsoft Graph
 
@@ -199,7 +199,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 * _Analytics.Read_. [Перечисление соответствующих параметров для пользователя](/graph/api/useranalytics-get-settings?view=graph-rest-beta&preserve-view=true) (`GET /beta/me/analytics/settings`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -234,7 +234,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _AppCatalog.ReadWrite.All_. [Обновление опубликованного приложения](/graph/api/teamsapp-update?view=graph-rest-beta&preserve-view=true) (`PATCH /beta/appCatalogs/teamsApps/{id}`)
 * _AppCatalog.ReadWrite.All_. [Удаление опубликованного приложения](/graph/api/teamsapp-delete?view=graph-rest-beta&preserve-view=true) (`DELETE /beta/appCatalogs/teamsApps/{id}`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 Отсутствуют.
 
@@ -417,7 +417,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 ### <a name="example-usage"></a>Примеры использования
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Calls.Initiate.All_. Совершение однорангового звонка из приложения пользователю в организации (`POST /beta/communications/calls`).
 * _Calls.InitiateGroupCall.All_. Совершение группового звонка из приложения группе пользователей в организации (`POST /beta/communications/calls`).
@@ -897,6 +897,28 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 
 Более сложные сценарии с использованием нескольких разрешений представлены в разделе [Сценарии с использованием разрешений](#permission-scenarios).
 
+
+---
+
+## <a name="employee-learning-permissions"></a>Разрешения на обучение сотрудников
+
+#### <a name="delegated-permissions"></a>Делегированные разрешения
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Чтение содержимого обучения | Позволяет приложению считывать содержимое обучения в каталоге организации от имени вошедшего пользователя. | Да | Нет |
+| _LearningContent.ReadWrite.All_  |    Управление содержимым обучения | Позволяет приложению управлять всем содержимым обучения в каталоге организации от имени вошедшего пользователя. | Да | Нет |
+| _LearningProvider.Read_ |    Чтение данных поставщика услуг обучения | Позволяет приложению считывать данные поставщика услуг обучения в каталоге организации от имени вошедшего пользователя. | Да | Нет |
+| _LearningProvider.ReadWrite_  |    Управление поставщиком услуг обучения | Позволяет приложению создавать, обновлять, считывать и удалять данные поставщика услуг обучения в каталоге организации от имени вошедшего пользователя. | Да | Нет |
+
+#### <a name="application-permissions"></a>Разрешения приложений
+
+|   Разрешение    |  Отображаемая строка   |  Описание | Необходимость в согласии администратора | Поддержка учетной записи Майкрософт |
+|:----------------|:------------------|:-------------|:-----------------------|:--------------|
+| _LearningContent.Read.All_ |    Чтение содержимого обучения | Позволяет приложению считывать все содержимое обучения в каталоге организации без необходимости входа пользователя. | Да | Нет |
+| _LearningContent.ReadWrite.All_  |    Управление содержимым обучения | Позволяет приложению управлять всем содержимым обучения в каталоге организации без необходимости входа пользователя. | Да | Нет |
+
+
 ---
 
 ## <a name="entitlement-management-permissions"></a>Разрешения на управление правами
@@ -1014,7 +1036,7 @@ _AccessReview.Read.All_, _AccessReview.ReadWrite.All_ и _AccessReview.ReadWrite
 * _GroupMember.ReadWrite.All_. Обновление участников группы (`POST /groups/{id}/members/$ref`).
 > **Примечание.** При этом также необходимо разрешение _User.ReadBasic.All_ для чтения пользователя, чтобы добавить его как участника.
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _Group.Read.All_. Поиск всех групп, имена которых начинаются с "Sales" (`GET /groups?$filter=startswith(displayName,'Sales')`).
 * _Group.ReadWrite.All_. Управляющая служба создает события в календаре группы Microsoft 365 (`POST /groups/{id}/events`).
@@ -2357,7 +2379,7 @@ SubjectRightsRequest.ReadWrite.All | Чтение и запись запросо
 
 * _ThreatAssessment.ReadWrite.All_: чтение и запись запросов на оценку угроз (`POST /informationProtection/threatAssessmentRequests`)
 
-#### <a name="application"></a>Для приложений
+#### <a name="application"></a>Приложение
 
 * _ThreatAssessment.Read.All_: чтение запросов на оценку угроз (`GET /informationProtection/threatAssessmentRequests`)
 
