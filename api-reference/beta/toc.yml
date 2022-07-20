@@ -9397,10 +9397,10 @@ items:
                         href: api/intune-mam-windowsinformationprotection-assign.md
                   - name: Приложение Windows Information Protection
                     href: resources/intune-mam-windowsinformationprotectionapp.md
-                  - name: Сводка по обучению для приложения Windows Information Protection
+                  - name: Сводка по приложению Windows Information Protection
                     href: resources/intune-wip-windowsinformationprotectionapplearningsummary.md
                     items:
-                      - name: Перечисление
+                      - name: Список
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-list.md
                       - name: Получение
                         href: api/intune-wip-windowsinformationprotectionapplearningsummary-get.md
@@ -16068,6 +16068,54 @@ items:
                 href: api/opentypeextension-post-opentypeextension.md
               - name: Получение открытого расширения
                 href: api/opentypeextension-get.md
+          - name: Диск
+            href: resources/drive.md
+            items:
+              - name: Вывод диска
+                href: api/drive-get.md
+              - name: Список дочерних элементов
+                href: api/driveitem-list-children.md
+          - name: Обучение сотрудников
+            displayName: Viva Learning
+            items:
+              - name: Обзор
+                href: resources/viva-learning-api-overview.md
+              - name: Поставщик обучения
+                href: resources/learningprovider.md
+                items:
+                  - name: Список
+                    href: api/employeeexperience-list-learningproviders.md
+                  - name: Создание
+                    href: api/employeeexperience-post-learningproviders.md
+                  - name: Получение
+                    href: api/learningprovider-get.md
+                  - name: Обновление
+                    href: api/learningprovider-update.md
+                  - name: Delete
+                    href: api/employeeexperience-delete-learningproviders.md
+              - name: Обучающее содержимое
+                href: resources/learningcontent.md
+                items:
+                  - name: Список
+                    href: api/learningprovider-list-learningcontents.md
+                  - name: Получение
+                    href: api/learningcontent-get.md
+                  - name: Обновление
+                    href: api/learningcontent-update.md
+                  - name: Delete
+                    href: api/learningprovider-delete-learningcontents.md
+          - name: Заметки
+            href: resources/onenote.md
+            items:
+              - name: Список записных книжек
+                href: api/onenote-list-notebooks.md
+              - name: Создание записной книжки
+                href: api/onenote-post-notebooks.md
+          - name: Планы
+            href: resources/plannerplan.md
+            items:
+              - name: Список планов
+                href: api/plannergroup-list-plans.md
           - name: Смены
             items:
               - name: Shift
@@ -16235,27 +16283,8 @@ items:
                     href: api/workforceintegration-get.md
                   - name: Обновление
                     href: api/workforceintegration-update.md
-                  - name: Удаление
+                  - name: Delete
                     href: api/workforceintegration-delete.md
-          - name: Диск
-            href: resources/drive.md
-            items:
-              - name: Вывод диска
-                href: api/drive-get.md
-              - name: Список дочерних элементов
-                href: api/driveitem-list-children.md
-          - name: Планы
-            href: resources/plannerplan.md
-            items:
-              - name: Список планов
-                href: api/plannergroup-list-plans.md
-          - name: Заметки
-            href: resources/onenote.md
-            items:
-              - name: Список записных книжек
-                href: api/onenote-list-notebooks.md
-              - name: Создание записной книжки
-                href: api/onenote-post-notebooks.md
           - name: Предоставление разрешений для конкретных ресурсов
             href: resources/resourcespecificpermissiongrant.md
             items:
