@@ -5,12 +5,12 @@ ms.localizationpriority: high
 author: nkramer
 ms.prod: microsoft-teams
 doc_type: conceptualPageType
-ms.openlocfilehash: ea2cee219628415158c3f625a5cdd376d5fd1bd7
-ms.sourcegitcommit: c21fefa5c3c62df14147e7918cb43327f7d72e69
-ms.translationtype: MT
+ms.openlocfilehash: fe1d1da1ddf03a3b25a206c380f6ce9b6886650e
+ms.sourcegitcommit: d6d36ffd02bfd925343b11ab11dd735b3193740b
+ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64685217"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66883086"
 ---
 # <a name="use-the-microsoft-graph-api-to-work-with-microsoft-teams"></a>Работа с Microsoft Teams при помощи API Microsoft Graph
 
@@ -22,22 +22,24 @@ Microsoft Teams — это рабочее пространство с чатам
 
 | Ресурс | Методы |
 |:---------------|:--------|
-|[team](../resources/team.md)| [Список команд](../api/user-list-joinedteams.md), список [всех](/graph/teams-list-all-teams) [команд, список](../api/associatedteaminfo-list.md) связанных команд, [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](../api/group-delete.md), [клонирование](../api/team-clone.md), [архивация](../api/team-archive.md), [неархивативная](../api/team-unarchive.md) |
-|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](../resources/notebook.md), [получение планов](plannergroup.md), [получение календаря](event.md) |
-|[channel](../resources/channel.md)|[Список](../api/channel-list.md), [создание](../api/channel-post.md), [чтение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
-|[teamsTab](../resources/teamstab.md) |[Список](../api/channel-list-tabs.md), [создание](../api/channel-post-tabs.md), [чтение](../api/channel-get-tabs.md), [обновление](../api/channel-patch-tabs.md), [удаление](../api/channel-delete-tabs.md) |
-|[teamsApp](../resources/teamsapp.md)|[Список](../api/appcatalogs-list-teamsapps.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
-|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/team-list-installedapps.md), [установка](../api/team-post-installedapps.md), [обновление](../api/team-delete-installedapps.md), [удаление](../api/team-delete-installedapps.md) |
-|[chatMessage](../resources/chatmessage.md)| [Список в канале](../api/channel-list-messages.md), [список в чате](../api/chat-list-messages.md), [отправка](../api/chatmessage-post.md), [чтение в канале](../api/chatmessage-get.md), [чтение в чате](../api/chatmessage-get.md)|
-|[chat](../resources/chat.md)| [Перечисление](../api/chat-list.md), [чтение](../api/chat-get.md),
+|[team](../resources/team.md)| [Перечисление ваших команд](../api/user-list-joinedteams.md), [перечисление всех команд](/graph/teams-list-all-teams), [перечисление смежных команд](../api/associatedteaminfo-list.md), [создание](../api/team-put-teams.md), [чтение](../api/team-get.md), [обновление](../api/team-update.md), [удаление](../api/group-delete.md), [клонирование](../api/team-clone.md), [архивирование](../api/team-archive.md), [распаковка](../api/team-unarchive.md) |
 |[call](../resources/call.md)| [Ответ](../api/call-answer.md), [отклонение](../api/call-reject.md), [перенаправление](../api/call-redirect.md), [отключение звука](../api/call-mute.md), [включение звука](../api/call-unmute.md), [изменение роли при демонстрации экрана](../api/call-changescreensharingrole.md), [перечисление участников](../api/call-list-participants.md), [приглашение участников](../api/participant-invite.md), [ отключение звука всех участников](../api/participant-muteall.md) |
+|[channel](../resources/channel.md)|[Перечисление](../api/channel-list.md), [создание](../api/channel-post.md), [получение](../api/channel-get.md), [обновление](../api/channel-patch.md), [удаление](../api/channel-delete.md)|
+|[chat](../resources/chat.md)| [Перечисление](../api/chat-list.md), [чтение](../api/chat-get.md),
+|[chatMessage](../resources/chatmessage.md)| [Список в канале](../api/channel-list-messages.md), [список в чате](../api/chat-list-messages.md), [отправка](../api/chatmessage-post.md), [чтение в канале](../api/chatmessage-get.md), [чтение в чате](../api/chatmessage-get.md)|
+|[group](../resources/group.md)| [Добавление участника](../api/group-post-members.md), [удаление участника](../api/group-delete-members.md), [добавление владельца](../api/group-post-owners.md), [удаление владельца](../api/group-delete-owners.md), [получение файлов](drive.md), [получение записной книжки](../resources/notebook.md), [получение планов](plannergroup.md), [получение календаря](event.md) |
+|[learningContent](learningcontent.md) | [Перечисление](../api/learningprovider-list-learningcontents.md), [получение](../api/learningcontent-get.md), [обновление](../api/learningcontent-update.md), [удаление](../api/learningprovider-delete-learningcontents.md) |
+|[learningProvider](learningprovider.md) | [Перечисление](../api/employeeexperience-list-learningproviders.md), [создание](../api/employeeexperience-post-learningproviders.md), [получение](../api/learningprovider-get.md), [обновление](../api/learningprovider-update.md), [удаление](../api/employeeexperience-delete-learningproviders.md) |
 |[schedule](../resources/schedule.md)| [Создание или замена](../api/team-put-schedule.md), [получение](../api/schedule-get.md), [предоставление общего доступа](../api/schedule-share.md) |
 |[schedulingGroup](../resources/schedulinggroup.md)| [Создание](../api/schedule-post-schedulinggroups.md), [список](../api/schedule-list-schedulinggroups.md), [получение](../api/schedulinggroup-get.md), [замена](../api/schedulinggroup-put.md), [удаление](../api/schedulinggroup-delete.md) |
 |[shift](../resources/shift.md)| [Создание](../api/schedule-post-shifts.md), [список](../api/schedule-list-shifts.md), [получение](../api/shift-get.md), [замена](../api/shift-put.md), [удаление](../api/shift-delete.md) |
-|[timeOff](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
-|[timeOffReason](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
 |[tag](../resources/teamworkTag.md)|[Перечисление](../api/teamworkTag-list.md), [создание](../api/teamworkTag-post.md), [получение](../api/teamworkTag-get.md), [обновление](../api/teamworkTag-update.md), [удаление](../api/teamworkTag-delete.md)|
 |[tagMember](../resources/teamworkTagMember.md)|[Перечисление](../api/teamworkTagMember-list.md), [создание](../api/teamworkTagMember-post.md), [получение](../api/teamworkTagMember-get.md), [удаление](../api/teamworkTagMember-delete.md)|
+|[teamsApp](../resources/teamsapp.md)|[Список](../api/appcatalogs-list-teamsapps.md), [публикация](../api/teamsapp-publish.md), [обновление](../api/teamsapp-update.md), [удаление](../api/teamsapp-delete.md)|
+|[teamsAppInstallation](../resources/teamsappinstallation.md)| [Список](../api/team-list-installedapps.md), [установка](../api/team-post-installedapps.md), [обновление](../api/team-delete-installedapps.md), [удаление](../api/team-delete-installedapps.md) |
+|[teamsTab](../resources/teamstab.md) |[Список](../api/channel-list-tabs.md), [создание](../api/channel-post-tabs.md), [чтение](../api/channel-get-tabs.md), [обновление](../api/channel-patch-tabs.md), [удаление](../api/channel-delete-tabs.md) |
+|[timeOff](../resources/timeoff.md)| [Создание](../api/schedule-post-timesoff.md), [список](../api/schedule-list-timesoff.md), [получение](../api/timeoff-get.md), [замена](../api/timeoff-put.md), [удаление](../api/timeoff-delete.md) |
+|[timeOffReason](../resources/timeoffreason.md)| [Создание](../api/schedule-post-timeoffreasons.md), [список](../api/schedule-list-timeoffreasons.md), [получение](../api/timeoffreason-get.md), [замена](../api/timeoffreason-put.md), [удаление](../api/timeoffreason-delete.md) |
 
 ## <a name="microsoft-teams-limits"></a>Ограничения Microsoft Teams
 
