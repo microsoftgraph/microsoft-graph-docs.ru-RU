@@ -5,12 +5,12 @@ author: akgoel23
 ms.localizationpriority: medium
 ms.prod: identity-and-sign-in
 doc_type: apiPageType
-ms.openlocfilehash: 5ad0459e6343a3eca0fa65d5832dd291b5027c66
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: 5498cc69bde517632af1bc481240f962be03b1a3
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66555725"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66447466"
 ---
 # <a name="update-internaldomainfederation"></a>Обновление internalDomainFederation
 Пространство имен: microsoft.graph
@@ -24,9 +24,7 @@ ms.locfileid: "66555725"
 |:---|:---|
 |Делегированные (рабочая или учебная учетная запись)|Domain.ReadWrite.All|
 |Делегированные (личная учетная запись Майкрософт)|Не поддерживается|
-|Для приложений|Domain.ReadWrite.All|
-
-Вызывающему пользователю или приложению должна быть назначена роль [глобального Azure AD администратора](/azure/active-directory/roles/permissions-reference).
+|Приложение|Domain.ReadWrite.All|
 
 ## <a name="http-request"></a>HTTP-запрос
 
@@ -41,7 +39,7 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 ## <a name="request-headers"></a>Заголовки запросов
 |Имя|Описание|
 |:---|:---|
-|Авторизация|Bearer {токен}. Обязательный.|
+|Авторизация|Bearer {token}. Обязательный.|
 |Content-Type|application/json. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
@@ -50,19 +48,19 @@ PATCH /domains/{domainsId}/federationConfiguration/{internalDomainFederationId}
 
 |Свойство|Тип|Описание|
 |:---|:---|:---|
-|activeSignInUri|Строка|URL-адрес конечной точки, используемой активными клиентами при проверке подлинности с помощью федеративных доменов, настроенного для единого входа в Azure Active Directory (Azure AD). Соответствует свойству **ActiveLogOnUri** [командлета Set-MsolDomainFederationSettings MSOnline v1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|activeSignInUri|String|URL-адрес конечной точки, используемой активными клиентами при проверке подлинности с помощью федеративных доменов, настроенного для единого входа в Azure Active Directory (Azure AD). Соответствует свойству **ActiveLogOnUri** [командлета Set-MsolDomainFederationSettings MSOnline v1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
 |displayName|String|Отображаемое имя федеративного поставщика удостоверений (IdP). |
 |federatedIdpMfaBehavior|federatedIdpMfaBehavior|Определяет, принимает ли Azure AD многофакторную проверку подлинности, выполняемую федеративным IdP, когда федеративный пользователь имеет доступ к приложению, которое управляется политикой условного доступа, требуемой MFA. Допустимые значения: `acceptIfMfaDoneByFederatedIdp`, `enforceMfaByFederatedIdp`, `rejectMfaByFederatedIdp`, `unknownFutureValue`. Дополнительные сведения см. в [разделе federatedIdpMfaBehavior.](#federatedidpmfabehavior-values)|
-|isSignedAuthenticationRequestRequired|Логический|Если `true`запросы на проверку подлинности SAML отправляются федеративному поставщику удостоверений SAML, Azure AD подписывать эти запросы с помощью ключа подписи OrgID. Если `false` (по умолчанию) запросы проверки подлинности SAML, отправленные федеративному поставщику удостоверений, не подписыются.|
-|IssuerUri|Строка|URI издателя сервера федерации.|
-|metadataExchangeUri|Строка|URI конечной точки обмена метаданными, используемой для проверки подлинности из полнофункциональных клиентских приложений.|
-|nextSigningCertificate|Строка|Резервный сертификат подписи маркера, используемый для подписи маркеров по истечении срока действия основного сертификата подписи. Форматированные в виде строк в кодировке Base64 открытой части сертификата подписи маркера федеративного IdP. Должен быть совместим с классом X509Certificate2. Как и **в случае с signingCertificate**, свойство **nextSigningCertificate** используется, если требуется смена за пределами обновления автоматической смены, настраивается новая служба федерации или если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.|
-|passiveSignInUri|Строка|Универсальный код ресурса (URI), на который направляются веб-клиенты при входе Azure AD служб. |
+|isSignedAuthenticationRequestRequired|Логическое|Если `true`запросы на проверку подлинности SAML отправляются федеративному поставщику удостоверений SAML, Azure AD подписывать эти запросы с помощью ключа подписи OrgID. Если `false` (по умолчанию) запросы проверки подлинности SAML, отправленные федеративному поставщику удостоверений, не подписыются.|
+|IssuerUri|String|URI издателя сервера федерации.|
+|metadataExchangeUri|String|URI конечной точки обмена метаданными, используемой для проверки подлинности из полнофункциональных клиентских приложений.|
+|nextSigningCertificate|String|Резервный сертификат подписи маркера, используемый для подписи маркеров по истечении срока действия основного сертификата подписи. Форматированные в виде строк в кодировке Base64 открытой части сертификата подписи маркера федеративного IdP. Должен быть совместим с классом X509Certificate2. Как и **в случае с signingCertificate**, свойство **nextSigningCertificate** используется, если требуется смена за пределами обновления автоматической смены, настраивается новая служба федерации или если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.|
+|passiveSignInUri|String|Универсальный код ресурса (URI), на который направляются веб-клиенты при входе Azure AD служб. |
 |preferredAuthenticationProtocol|authenticationProtocol|Предпочтительный протокол проверки подлинности. Допустимые значения: `wsFed`, `saml`, `unknownFutureValue`. |
 |promptLoginBehavior|promptLoginBehavior|Задает предпочтительное поведение для запроса на вход. Допустимые значения: `translateToFreshPasswordAuthentication`, `nativeSupport`, `disabled`, `unknownFutureValue`.|
-|signingCertificate|Строка|Текущий сертификат, используемый для подписи маркеров, передаваемых платформа удостоверений Майкрософт. Сертификат форматируется как строка в кодировке Base64 общедоступной части сертификата подписи маркера федеративного IdP и должна быть совместима с классом X509Certificate2. <br>Это свойство используется в следующих сценариях: <li> Если требуется смена за пределами обновления автоматической регистрации <li> Настраивается новая служба федерации <li> Если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.<br>Azure AD обновляет сертификаты с помощью процесса автоматической регистрации, в котором он пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения срока действия текущего сертификата. Если новый сертификат недоступен, Azure AD отслеживает метаданные ежедневно и обновляет параметры федерации для домена, когда доступен новый сертификат. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
+|signingCertificate|String|Текущий сертификат, используемый для подписи маркеров, передаваемых платформа удостоверений Майкрософт. Сертификат форматируется как строка в кодировке Base64 общедоступной части сертификата подписи маркера федеративного IdP и должна быть совместима с классом X509Certificate2. <br>Это свойство используется в следующих сценариях: <li> Если требуется смена за пределами обновления автоматической регистрации <li> Настраивается новая служба федерации <li> Если новый сертификат подписи маркера отсутствует в свойствах федерации после обновления сертификата службы федерации.<br>Azure AD обновляет сертификаты с помощью процесса автоматической регистрации, в котором он пытается получить новый сертификат из метаданных службы федерации за 30 дней до истечения срока действия текущего сертификата. Если новый сертификат недоступен, Azure AD отслеживает метаданные ежедневно и обновляет параметры федерации для домена, когда доступен новый сертификат. Наследуется [от samlOrWsFedProvider](../resources/samlorwsfedprovider.md).|
 |signingCertificateUpdateStatus|[signingCertificateUpdateStatus](../resources/signingcertificateupdatestatus.md)|Предоставляет состояние и метку времени последнего обновления сертификата подписи.|
-|signOutUri|Строка|URI, на который клиенты перенаправляются при выходе из Azure AD служб. Соответствует свойству **LogOffUri** [командлета Set-MsolDomainFederationSettings MSOnline версии 1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
+|signOutUri|String|URI, на который клиенты перенаправляются при выходе из Azure AD служб. Соответствует свойству **LogOffUri** [командлета Set-MsolDomainFederationSettings MSOnline версии 1 PowerShell](/powershell/module/msonline/set-msoldomainfederationsettings).|
 
 ### <a name="federatedidpmfabehavior-values"></a>Значения federatedIdpMfaBehavior
 

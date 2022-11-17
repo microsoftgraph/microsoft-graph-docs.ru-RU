@@ -5,12 +5,12 @@ author: RamjotSingh
 ms.localizationpriority: high
 ms.prod: microsoft-teams
 doc_type: apiPageType
-ms.openlocfilehash: fd736d008f8e270294bdd97a84209c6a434981cc
-ms.sourcegitcommit: 38e16940da74bda465f890d945f9dc4aa412c6f4
-ms.translationtype: HT
+ms.openlocfilehash: 4e5fea915e905dd7bc55f85c736d8a88c24ff456
+ms.sourcegitcommit: a6cbea0e45d2e84b867b59b43ba6da86b54495a3
+ms.translationtype: Auto
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/05/2022
-ms.locfileid: "62397012"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "60999473"
 ---
 # <a name="channel-getallmessages"></a>канал: getAllMessages
 
@@ -44,16 +44,7 @@ ms.locfileid: "62397012"
 GET /teams/{team-id}/channels/getAllMessages
 ```
 
-## <a name="optional-query-parameters"></a>Необязательные параметры запроса
-
-Вы можете использовать параметр запроса `model`, который поддерживает значения `A` и `B`, в зависимости от предпочитаемой [модели лицензирования и оплаты](/graph/teams-licenses), как показано в следующих примерах.  
-Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements).
-
-```http
-GET /teams/{team-id}/channels/getAllMessages?model=A
-GET /teams/{team-id}/channels/getAllMessages?model=B
-```
-Если параметр `model` не указан, будет использоваться [режим оценки](/graph/teams-licenses#evaluation-mode-default-requirements). 
+## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 
 Вы можете использовать параметр запроса [$top](/graph/query-parameters#top-parameter) для управления количеством элементов в одном отклике.
 Кроме того, [$filter](/graph/query-parameters#filter-parameter) поддерживается в запросе диапазона **dateTime** ресурса **lastModifiedDateTime**. Другие [параметры запроса OData](/graph/query-parameters) в настоящее время не поддерживаются.
@@ -97,7 +88,7 @@ GET https://graph.microsoft.com/beta/teams/fbe2bf47-16c8-47cf-b4a5-4b9b187c508b/
 [!INCLUDE [sample-code](../includes/snippets/java/get-allchannelmessages-1-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
+# <a name="go"></a>[Перейти](#tab/go)
 [!INCLUDE [sample-code](../includes/snippets/go/get-allchannelmessages-1-go-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 

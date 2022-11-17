@@ -1,24 +1,24 @@
 ---
-title: Перечисление назначений классов
-description: Получение списка объектов назначения.
+title: Назначения классов списка
+description: Извлечение списка объектов назначения.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 00e1a1866afc2ed226972fe373ca12f6cc2965ff
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 16a6a104806fc74b4e293bb094de7749dfc89373
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65366249"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60890724"
 ---
-# <a name="list-class-assignments"></a>Перечисление назначений классов
+# <a name="list-class-assignments"></a>Назначения классов списка
 
 Пространство имен: microsoft.graph
 
-Получение списка объектов назначения. 
+Извлечение списка объектов назначения. 
 
-Преподаватель или приложение, выполняемые с разрешениями приложения, могут просматривать все объекты назначения для класса. Учащиеся могут видеть только назначенные им задания.
+Учитель или приложение, исполняющие с разрешениями приложений, могут видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -40,7 +40,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Ниже приведены доступные параметры `$expand` для этого метода: `categories`, `resources`, , `rubric`, и `submissions``*`, который включает все предыдущие параметры.
+Ниже параметров для этого метода: , , , , и , который включает все `$expand` `categories` предыдущие `resources` `rubric` `submissions` `*` параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -50,15 +50,15 @@ GET /education/classes/{id}/assignments
 
 ## <a name="request-body"></a>Текст запроса
 
-Не предоставляйте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-assignments"></a>Пример 1. Получение назначений
+### <a name="example-1-get-assignments"></a>Пример 1. Получить назначения
 
 #### <a name="request"></a>Запрос
 
@@ -90,20 +90,12 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-assignments-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -117,6 +109,7 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 344
 
 {
   "value": [
@@ -165,7 +158,7 @@ Content-type: application/json
 }
 ```
 
-### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получение назначений с помощью $expand параметров
+### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получать назначения с помощью $expand параметров
 
 #### <a name="request"></a>Запрос
 
@@ -197,20 +190,12 @@ GET https://graph.microsoft.com/v1.0/education/classes/acdefc6b-2dc6-4e71-b1e9-6
 [!INCLUDE [sample-code](../includes/snippets/java/get-assignments-resources-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-assignments-resources-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-resources-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример ответа, включаемого в список ресурсов для каждого назначения. 
+Ниже приводится пример ответа, он включает список ресурсов для каждого назначения. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -270,6 +255,7 @@ Content-length: 344
                     "displayName": null
                 }
             },
+            "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('7e04c28e-5c5c-4fd0-ba83-62c59d196e5d')/resources",
             "resources": []
         },
         {
@@ -313,6 +299,7 @@ Content-length: 344
                     "displayName": null
                 }
             },
+            "resources@odata.context": "https://graph.microsoft.com/v1.0/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

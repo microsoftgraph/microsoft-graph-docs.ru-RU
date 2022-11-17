@@ -1,26 +1,26 @@
 ---
-title: Перечисление назначений классов
-description: Получение списка объектов назначения.
+title: Назначения классов списка
+description: Извлечение списка объектов назначения.
 author: mmast-msft
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 685fe0a965a21ac2d609219719f1269893909898
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 6e287683dbade562e4face1a31a9dfcf825e0c9b
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365962"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780858"
 ---
-# <a name="list-class-assignments"></a>Перечисление назначений классов
+# <a name="list-class-assignments"></a>Назначения классов списка
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Получение списка объектов назначения. 
+Извлечение списка объектов назначения. 
 
-Преподаватель или приложение, выполняемые с разрешениями приложения, могут просматривать все объекты назначения для класса. Учащиеся могут видеть только назначенные им задания.
+Учитель или приложение, исполняющие с разрешениями приложений, могут видеть все объекты назначения для класса. Учащиеся могут видеть только назначения, которые им назначены.
 
 ## <a name="permissions"></a>Разрешения
 
@@ -42,7 +42,7 @@ GET /education/classes/{id}/assignments
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки ответа.
 
-Доступны следующие `$expand` параметры для этого метода: `categories`, `resources`, и `submissions` `rubric``*` который включает все предыдущие параметры.
+Доступные `$expand` параметры для этого метода: , , и который включает в себя `categories` `resources` все предыдущие `rubric` `submissions` `*` параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 
@@ -52,60 +52,32 @@ GET /education/classes/{id}/assignments
 
 ## <a name="request-body"></a>Текст запроса
 
-Не предоставляйте текст запроса для этого метода.
+Не указывайте текст запроса для этого метода.
 
 ## <a name="response"></a>Отклик
 
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationAssignment](../resources/educationassignment.md) в тексте отклика.
+В случае успешного выполнения этот метод возвращает код ответа и коллекцию объектов `200 OK` [educationAssignment](../resources/educationassignment.md) в тексте ответа.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-assignments"></a>Пример 1. Получение назначений
+### <a name="example-1-get-assignments"></a>Пример 1. Получить назначения
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignments"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments
+```http
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-assignments-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -119,102 +91,73 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 ```http
 HTTP/1.1 200 OK
 Content-type: application/json
+Content-length: 344
 
 {
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments",    
-    "value": [
-        {
-            "classId": "72a7baec-c3e9-4213-a850-f62de0adad5f",
-            "displayName": "Looper app task",
-            "closeDateTime": null,
-            "dueDateTime": "2021-11-12T07:59:00Z",
-            "assignDateTime": null,
-            "assignedDateTime": null,
-            "allowLateSubmissions": true,
-            "resourcesFolderUrl": null,
-            "createdDateTime": "2021-11-10T20:37:59.6432527Z",
-            "lastModifiedDateTime": "2021-11-10T20:38:10.395034Z",
-            "allowStudentsToAddResourcesToSubmission": true,
-            "status": "draft",
-            "notificationChannelUrl": null,
-            "webUrl": "https://teams.microsoft.com/l/entity/66aeee93-507d-479a-a3ef-8f494af43945/classroom?context=%7B%22subEntityId%22%3A%22%7B%5C%22version%5C%22%3A%5C%221.0%5C%22,%5C%22config%5C%22%3A%7B%5C%22classes%5C%22%3A%5B%7B%5C%22id%5C%22%3A%5C%2272a7baec-c3e9-4213-a850-f62de0adad5f%5C%22,%5C%22displayName%5C%22%3Anull,%5C%22assignmentIds%5C%22%3A%5B%5C%22be973b06-0cdf-42d5-b8c2-fece599f50c0%5C%22%5D%7D%5D%7D,%5C%22action%5C%22%3A%5C%22navigate%5C%22,%5C%22view%5C%22%3A%5C%22assignment-viewer%5C%22%7D%22,%22channelId%22%3Anull%7D",
-            "addedStudentAction": "none",
-            "id": "be973b06-0cdf-42d5-b8c2-fece599f50c0",
-            "grading": null,
-            "instructions": {
-                "content": "",
-                "contentType": "text"
-            },
-            "assignTo": {
-                "@odata.type": "#microsoft.graph.educationAssignmentClassRecipient"
-            },
-            "createdBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                    "displayName": null
-                }
-            },
-            "lastModifiedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "f3a5344e-dbde-48b0-be24-b5b62a243836",
-                    "displayName": null
-                }
-            }
-        }
+  "value": [
+    {
+      "id": "19002",
+      "addedStudentAction": "none",
+      "allowLateSubmissions": true,
+      "allowStudentsToAddResourcesToSubmission": true,
+      "assignDateTime": "2014-02-01T00:00:00Z",
+      "assignTo": {"@odata.type": "microsoft.graph.educationAssignmentRecipient"},
+      "assignedDateTime": "2014-02-01T00:00:00Z",
+      "classId": "11018",
+      "closeDateTime": "2014-02-11T00:00:00Z",
+      "createdBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+              "displayName": null
+          }
+      },
+      "createdDateTime": "2014-02-01T00:00:00Z",
+      "displayName": "published",
+      "dueDateTime": "2014-02-01T00:00:00Z",
+      "grading": {
+        "@odata.type": "#microsoft.graph.educationAssignmentPointsGradeType",
+        "maxPoints": 100
+      },
+      "instructions": {
+        "contentType": "Text",
+        "content": "Read chapters 1 through 3"
+      },
+      "lastModifiedBy": {
+          "application": null,
+          "device": null,
+          "user": {
+              "id": "63cc91d2-59c7-4732-9594-35b91a26b340",
+              "displayName": null
+          }
+      },
+      "lastModifiedDateTime": "2014-02-01T00:00:00Z",
+      "notificationChannelUrl": null,
+      "status": "published"
+    }
   ]
 }
 ```
 
-### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получение назначений с помощью $expand параметров
+### <a name="example-2-get-assignments-using-expand-options"></a>Пример 2. Получать назначения с помощью $expand параметров
 
 #### <a name="request"></a>Запрос
 
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "get_assignments_resources"
 }-->
 
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f62de0adad5f/assignments?$expand=resources
+```http
+GET https://graph.microsoft.com/beta/education/classes/{id}/assignments?$expand=resources
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-assignments-resources-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-assignments-resources-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-assignments-resources-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-assignments-resources-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-assignments-resources-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-assignments-resources-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика. Ответ содержит список ресурсов для каждого назначения. 
+Ниже приведен пример ответа. Ответ включает список ресурсов для каждого назначения. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -275,6 +218,7 @@ Content-length: 344
                     "displayName": null
                 }
             },
+            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/resources",
             "resources": []
         },
         {
@@ -319,6 +263,7 @@ Content-length: 344
                     "displayName": null
                 }
             },
+            "resources@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('c057de5a-850e-4a35-b233-daf89cd55c8b')/resources",
             "resources": [
                 {
                     "distributeForStudentWork": false,

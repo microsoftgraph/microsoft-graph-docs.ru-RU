@@ -5,12 +5,12 @@ author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 04039b53559af85693e3edb253c99d4e3d67486f
-ms.sourcegitcommit: e48fe05125fe1e857225d20ab278352ff7f0911a
+ms.openlocfilehash: e9bcbfd432bbc18d284a2382e01ce3e2ff51e9f1
+ms.sourcegitcommit: b2b3c3ae00f9e2e0bb2dcff30e97b60ccdebf170
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556243"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66438019"
 ---
 # <a name="list-administrativeunits"></a>Перечисление элементов администрирования
 
@@ -38,18 +38,11 @@ GET /directory/administrativeUnits
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает параметры `$count`запроса , `$select`, `$search`, `$filter`и `$expand` [OData](/graph/query-parameters) для настройки ответа.
 
-### <a name="retrieve-extensions-and-associated-data"></a>Получение расширений и связанных данных
-
-| Тип расширения       | Комментарии                                                 |
-|----------------------|----------------------------------------------------------|
-| Расширения схемы    | Возвращается только с помощью `$select`. Поддерживает `$filter` (`eq`). |
-| Расширения каталогов | Возвращается по умолчанию. Поддерживает `$filter` (`eq`).          |
-
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Имя      |Описание|
 |:----------|:----------|
-| Авторизация  | Bearer {токен}. Обязательный.|
+| Авторизация  | Bearer {token}. Обязательный.|
 
 ## <a name="request-body"></a>Текст запроса
 Не указывайте текст запроса для этого метода.

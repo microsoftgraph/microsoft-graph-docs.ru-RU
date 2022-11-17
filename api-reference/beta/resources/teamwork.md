@@ -1,16 +1,16 @@
 ---
 title: Тип ресурса teamwork
-description: Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.
-author: charlieforce
-ms.localizationpriority: medium
-ms.prod: teamwork
+description: Контейнер для функций Microsoft Teams, доступных организации.
+author: akjo
 doc_type: resourcePageType
-ms.openlocfilehash: 3c5282ff44f2ae56d40e666548e222ccfb6e13f4
-ms.sourcegitcommit: c168f2cb95b4863080a84cc199a7b878fb5eeb8e
+ms.localizationpriority: high
+ms.prod: microsoft-teams
+ms.openlocfilehash: 721335785b1fa70ad9433d1c03b7fe4c9ae89d05
+ms.sourcegitcommit: cf2b3c67cb9ce832944cfbac66171590bbbd83de
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66690016"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66645291"
 ---
 # <a name="teamwork-resource-type"></a>Тип ресурса teamwork
 
@@ -18,40 +18,38 @@ ms.locfileid: "66690016"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации. 
-
-Наследует [от сущности](../resources/entity.md).
+Контейнер для набора функциональных возможностей Microsoft Teams, доступных для организации.
 
 ## <a name="methods"></a>Методы
-|Метод|Тип возвращаемых данных|Описание|
-|:---|:---|:---|
+
+| Метод                                                  | Возвращаемый тип                                         |Описание                                                                               |
+|:--------------------------------------------------------|:----------------------------------------------------|:-----------------------------------------------------------------------------------------|
 |[Список deletedTeams](../api/teamwork-list-deletedteams.md)|Коллекция [deletedTeam](../resources/deletedteam.md)|Получение списка объектов [deletedTeam](../resources/deletedteam.md) и их свойств.|
-|[Перечисление teamTemplates](../api/teamwork-list-teamtemplates.md)|[Коллекция teamTemplate](../resources/teamtemplate.md)|Получение списка объектов [teamTemplate](../resources/teamtemplate.md) , доступных для клиента. |
 
 ## <a name="properties"></a>Свойства
-|Свойство|Тип|Описание|
-|:---|:---|:---|
-|id|String| Уникальный идентификатор. Наследуется от [сущности](../resources/entity.md).|
+
+| Свойство | Тип | Описание |
+|:---------------|:--------|:----------|
+|id|string| Уникальный идентификатор. |
 
 ## <a name="relationships"></a>Связи
+
 | Связь | Тип | Описание |
 |:---------------|:--------|:----------|
 |deletedTeams|Коллекция [deletedTeam](../resources/deletedteam.md)| Коллекция удаленных команд.|
 |devices|коллекция [teamworkDevice](../resources/teamworkdevice.md)|Устройства Teams, подготовленные для клиента.|
 |teamsAppSettings|[teamsAppSettings](../resources/teamsappsettings.md)|Представляет параметры на уровне клиента для всех [приложений Teams](teamsapp.md) в клиенте.|
-|teamTemplates|[коллекция teamtemplate](../resources/teamtemplate.md)| Шаблоны, связанные с командой.|
 |workforceIntegrations|коллекция [workforceIntegration](../resources/workforceintegration.md)| Интеграция рабочих ресурсов со сменами.|
 
 ## <a name="json-representation"></a>Представление JSON
+
 Ниже указано представление ресурса в формате JSON.
+
 <!-- {
   "blockType": "resource",
-  "keyProperty": "id",
   "@odata.type": "microsoft.graph.teamwork",
-  "baseType": "microsoft.graph.entity",
-  "openType": false
-}
--->
+  "baseType": "microsoft.graph.entity"
+}-->
 
 ``` json
 {
@@ -64,3 +62,15 @@ ms.locfileid: "66690016"
 
 - [Ресурс userTeamwork](userteamwork.md)
 
+<!-- uuid: 8fcb5dbc-d5aa-4681-8e31-b001d5168d79
+2015-10-25 14:57:30 UTC -->
+<!--
+{
+  "type": "#page.annotation",
+  "description": "teamwork resource",
+  "keywords": "",
+  "section": "documentation",
+  "tocPath": "",
+  "suppressions": []
+}
+-->

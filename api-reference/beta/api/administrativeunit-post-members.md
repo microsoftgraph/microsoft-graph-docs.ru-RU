@@ -1,16 +1,16 @@
 ---
 title: Добавление участника
-description: Этот API используется для добавления участника (пользователя, группы или устройства) в административную единицу.
+description: Используйте этот API для добавления участника (пользователя или группы) в административное подразделение.
 author: DougKirschner
 ms.localizationpriority: medium
 ms.prod: directory-management
 doc_type: apiPageType
-ms.openlocfilehash: 76ce28e022d171ccd50486527e2ac0c0cfe5df58
-ms.sourcegitcommit: 8253b79a9fdfea723899860492219eaeb9f74e3d
+ms.openlocfilehash: 6b71dcfb57167d4b4391ebd93fc52ee165aaa675
+ms.sourcegitcommit: ddeee0eec277df06d9e635e5b5c257d14c856273
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160554"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "60780480"
 ---
 # <a name="add-a-member"></a>Добавление участника
 
@@ -18,9 +18,9 @@ ms.locfileid: "66160554"
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Используйте этот API, чтобы добавить участника (пользователя, группу или устройство) в административную единицу или создать новую группу в административной единице. Все [типы групп](/graph/api/resources/groups-overview) можно создать в административной единице.
+Используйте этот API, чтобы добавить члена (пользователя или группы) в административное подразделение или создать новую группу в административном подразделении. Все [типы групп](/graph/api/resources/groups-overview) могут быть созданы в административном блоке.
 
-**Примечание:** В настоящее время в административную единицу можно добавлять только по одному участнику".
+**ПРИМЕЧАНИЕ:** В настоящее время в административное подразделение можно добавить только один член одновременно.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -28,37 +28,26 @@ ms.locfileid: "66160554"
 ### <a name="permissions-to-add-an-existing-user-group-or-device"></a>Разрешения на добавление существующего пользователя, группы или устройства
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | AdministrativeUnit.ReadWrite.All |
-
-Чтобы добавить пользователя, группу или устройство в административную единицу, вызывающему субъекту должна быть назначена одна из следующих [Azure AD ролей](/azure/active-directory/roles/permissions-reference):
-
-* Администратор привилегированных ролей
-* Глобальный администратор
+|Делегированные (рабочая или учебная учетная запись) | AdministrativeUnit.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Для приложений | AdministrativeUnit.ReadWrite.All |
 
 ### <a name="permissions-to-create-a-new-group"></a>Разрешения на создание новой группы
 |Тип разрешения      | Разрешения (в порядке повышения привилегий)              |
 |:--------------------|:---------------------------------------------------------|
-|Делегированные (рабочая или учебная учетная запись) | Directory.ReadWrite.All    |
-|Делегированное (личная учетная запись Майкрософт) | Не поддерживается.    |
-|Application | Directory.ReadWrite.All |
-
-Чтобы создать группу в административной единице, вызывающему субъекту должна быть назначена одна из следующих Azure AD [ролей](/azure/active-directory/roles/permissions-reference):
-
-* Администратор привилегированных ролей
-* Глобальный администратор
-* Администратор групп
+|Делегированные (рабочая или учебная учетная запись) | Group.ReadWrite.All, Directory.ReadWrite.All, Directory.AccessAsUser.All    |
+|Делегированные (личная учетная запись Майкрософт) | Не поддерживается.    |
+|Приложение | Group.Create, Group.ReadWrite.All, Directory.ReadWrite.All |
 
 ## <a name="http-request"></a>HTTP-запрос
 
-Следующий запрос добавляет существующего пользователя, группу или устройство в административную единицу.
+Следующий запрос добавляет существующего пользователя, группы или устройства в административное подразделение.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members/$ref
 ```
 
-Следующий запрос создает новую группу в административной единице.
+Следующий запрос создает новую группу в административном подразделении.
 <!-- { "blockType": "ignored" } -->
 ```http
 POST /administrativeUnits/{id}/members
@@ -70,11 +59,12 @@ POST /administrativeUnits/{id}/members
 | Авторизация  | Bearer {token}. Обязательный. |
 | Content-Type  | application/json. Обязательный. |
 
+## <a name="request-body"></a>Основной текст запроса
 ### <a name="adding-an-existing-user-or-group"></a>Добавление существующего пользователя или группы
-В тексте запроса укажите `id` [пользователя,](../resources/user.md) группу  [,](../resources/group.md) [устройство](../resources/device.md) или [directoryObject](../resources/directoryobject.md) для добавления.
+В теле запроса укажи добавить пользователя, группу `id` или [](../resources/user.md) [directoryObject.](../resources/directoryobject.md) [](../resources/group.md)
 
-### <a name="creating-a-new-group"></a>Создание группы
-В следующей таблице показаны свойства ресурса группы, [](../resources/group.md) которые необходимо указать при создании группы в административной единице. 
+### <a name="creating-a-new-group"></a>Создание новой группы
+В следующей таблице показаны свойства группового [ресурса,](../resources/group.md) которые необходимо указать при создании группы в административном блоке. 
 
 | Свойство | Тип | Описание|
 |:---------------|:--------|:----------|
@@ -90,19 +80,17 @@ POST /administrativeUnits/{id}/members
 
 ## <a name="response"></a>Отклик
 
-При успешном добавлении существующего объекта (с помощью `$ref`) возвращается `204 No Content` код отклика. Метод не возвращает данные в теле отклика. 
+Если это успешно, добавление существующего объекта (с `$ref` помощью) возвращает `204 No Content` код ответа. Метод не возвращает данные в теле отклика. 
 
-При создании новой группы (без `$ref`) `201 Created` этот метод возвращает код отклика [и объект группы](../resources/group.md) в тексте отклика. Отклик включает в себя только свойства по умолчанию для группы.
+При создании новой группы (без) этот метод возвращает код ответа и объект группы `$ref` `201 Created` в тексте ответа. [](../resources/group.md) Отклик включает в себя только свойства по умолчанию для группы.
 
 ## <a name="examples"></a>Примеры
 ### <a name="example-1-add-an-existing-user-or-group"></a>Пример 1. Добавление существующего пользователя или группы
-Ниже описано, как добавить существующего пользователя или группу в административную единицу.
+Ниже приводится добавление существующего пользователя или группы в административное подразделение.
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members_ref"
@@ -115,39 +103,12 @@ Content-type: application/json
   "@odata.id":"https://graph.microsoft.com/beta/groups/{id}"
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-ref-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-ref-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-ref-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-ref-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-ref-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/post-administrativeunits-members-ref-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-
-В тексте запроса укажите `id` [пользователя,](../resources/user.md) группу или объект [устройства, которые](../resources/group.md) вы хотите добавить.[](../resources/device.md)
+В теле запроса укажи объект пользователя или группы, который `id` необходимо добавить. [](../resources/user.md) [](../resources/group.md)
 
 #### <a name="response"></a>Отклик
-
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
  
 <!-- {
   "blockType": "response",
@@ -158,14 +119,12 @@ Content-type: application/json
 HTTP/1.1 204 No Content
 ```
 
-### <a name="example-2-create-a-new-group"></a>Пример 2. Создание группы
-В следующем примере создается новая группа в административной единице.
+### <a name="example-2-create-a-new-group"></a>Пример 2. Создание новой группы
+В следующем примере создается новая группа в административном подразделении.
 
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
-
-# <a name="http"></a>[HTTP](#tab/http)
 <!-- {
   "blockType": "request",
   "name": "post_administrativeunits_members"
@@ -187,35 +146,13 @@ Content-length: 244
   "securityEnabled": false
 }
 ```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/post-administrativeunits-members-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/post-administrativeunits-members-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/post-administrativeunits-members-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/post-administrativeunits-members-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/post-administrativeunits-members-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
 
 
-
-В тексте запроса укажите свойства объекта [группы](../resources/group.md) , который вы хотите добавить.
+В теле запроса укажи свойства объекта [группы,](../resources/group.md) который необходимо добавить.
 
 #### <a name="response"></a>Отклик
 
-Ниже приведен пример отклика.
+Ниже приведен пример ответа.
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 

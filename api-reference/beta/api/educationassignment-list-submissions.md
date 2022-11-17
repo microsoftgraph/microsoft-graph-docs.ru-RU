@@ -1,28 +1,26 @@
 ---
-title: Перечисление отправок
-description: Вывод списка всех отправок, связанных с назначением.
-author: cristobal-buenrostro
+title: Отправки списков
+description: Список всех отправлений, связанных с назначением.
+author: dipakboyed
 ms.localizationpriority: medium
 ms.prod: education
 doc_type: apiPageType
-ms.openlocfilehash: 500a2ca9e60c293199a477f06c2a25ed41d28b3e
-ms.sourcegitcommit: 3a8f6a77dd01a50adf543aaedbf6ec5a202abf93
+ms.openlocfilehash: 6789234c1e31959a8205e7431f84cb138e81dde8
+ms.sourcegitcommit: c6a8c1cc13ace38d6c4371139ee84707c5c93352
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65365969"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "60891061"
 ---
-# <a name="list-submissions"></a>Перечисление отправок
+# <a name="list-submissions"></a>Отправки списков
 
 Пространство имен: microsoft.graph
 
 [!INCLUDE [beta-disclaimer](../../includes/beta-disclaimer.md)]
 
-Вывод списка всех [отправок, связанных](../resources/educationsubmission.md) с [назначением](../resources/educationassignment.md).
+Список всех представлений, связанных с [назначением.](../resources/educationassignment.md)
 
-Преподаватель или приложение с разрешениями приложения могут получить все отправки **, а** учащийся может получить только отправки, с которых он связан.
-
-Укажите заголовок для `Prefer: include-unknown-enum-members` правильного **перечисления отправок** с состоянием `reassigned` . Дополнительные сведения см. в разделе примеров.
+Учитель или приложение с разрешениями на приложения могут получать все материалы, в то время как студент может получать только те материалы, с которые они связаны.
 
 ## <a name="permissions"></a>Разрешения
 Для вызова этого API требуется одно из указанных ниже разрешений. Дополнительные сведения, включая сведения о том, как выбрать разрешения, см. в статье [Разрешения](/graph/permissions-reference).
@@ -36,29 +34,28 @@ ms.locfileid: "65365969"
 ## <a name="http-request"></a>HTTP-запрос
 <!-- { "blockType": "ignored" } -->
 ```http
-GET /education/classes/{class-id}/assignments/{assignment-id}/submissions
+GET /education/classes/{id}/assignments/{id}/submissions
 ```
 
 ## <a name="optional-query-parameters"></a>Необязательные параметры запросов
 Этот метод поддерживает [параметры запросов OData](/graph/query-parameters) для настройки отклика.
 
-Ниже приведены доступные параметры `$expand` для этого метода: `outcomes`, `resources`, и `submittedResources`, `*`который включает все предыдущие параметры.
+Ниже параметров для этого метода: , , и , который `$expand` включает все предыдущие `outcomes` `resources` `submittedResources` `*` параметры.
 
 ## <a name="request-headers"></a>Заголовки запросов
 | Заголовок       | Значение |
 |:---------------|:--------|
 | Авторизация  | Bearer {token}. Обязательный.  |
-| Prefer  | `include-unknown-enum-members`. Необязательное свойство.  |
 
 ## <a name="request-body"></a>Текст запроса
-Не предоставляйте текст запроса для этого метода.
+Не поставляем тело запроса для этого метода.
 
 ## <a name="response"></a>Отклик
-В случае успешного выполнения этот метод возвращает код `200 OK` отклика и коллекцию объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
+В случае успешной работы этот метод возвращает код отклика и коллекцию `200 OK` объектов [educationSubmission](../resources/educationsubmission.md) в тексте отклика.
 
 ## <a name="examples"></a>Примеры
 
-### <a name="example-1-get-submissions"></a>Пример 1. Получение отправок
+### <a name="example-1-get-submissions"></a>Пример 1. Получения представлений
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -87,18 +84,10 @@ GET https://graph.microsoft.com/beta/education/classes/f4a941ff-9da6-4707-ba5b-0
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-submissions-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -155,7 +144,7 @@ Content-length: 873
 }
 ```
 
-### <a name="example-2-get-submissions-with-expand-options"></a>Пример 2. Получение отправок с $expand параметров
+### <a name="example-2-get-submissions-with-expand-options"></a>Пример 2. Получать отправки с помощью $expand параметров
 #### <a name="request"></a>Запрос
 Ниже приведен пример запроса.
 
@@ -185,19 +174,11 @@ GET https://graph.microsoft.com/beta/education/classes/72a7baec-c3e9-4213-a850-f
 [!INCLUDE [sample-code](../includes/snippets/java/get-submissions-expand-java-snippets.md)]
 [!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
 
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-expand-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-submissions-expand-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
 ---
 
 
 #### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
+Ниже приведен пример ответа. 
 
 >**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
 
@@ -259,6 +240,7 @@ Content-length: 4492
                     "displayName": null
                 }
             },
+            "outcomes@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('72a7baec-c3e9-4213-a850-f62de0adad5f')/assignments('efcdf80b-a5de-42ac-8579-e40b0223d48b')/submissions('9bc724ee-d314-1ec5-725d-5f81228e85a6')/outcomes",
             "outcomes": [
                 {
                     "@odata.type": "#microsoft.graph.educationFeedbackOutcome",
@@ -314,162 +296,6 @@ Content-length: 4492
                     ]
                 }
             ]
-        }
-    ]
-}
-```
-
-### <a name="example-3-get-submissions---request-with-optional-prefer-header"></a>Пример 3. Получение отправок — запрос с необязательным заголовком Prefer
-#### <a name="request"></a>Запрос
-Ниже приведен пример запроса.
-
-
-# <a name="http"></a>[HTTP](#tab/http)
-<!-- {
-  "blockType": "request",
-  "name": "get_submissions_prefer"
-}-->
-```msgraph-interactive
-GET https://graph.microsoft.com/beta/education/classes/59069eb2-2a09-4d90-bb19-2089cc69d613/assignments/80da1069-a635-4913-813f-d775a5470a8f/submissions
-Prefer: include-unknown-enum-members
-```
-# <a name="c"></a>[C#](#tab/csharp)
-[!INCLUDE [sample-code](../includes/snippets/csharp/get-submissions-prefer-csharp-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="javascript"></a>[JavaScript](#tab/javascript)
-[!INCLUDE [sample-code](../includes/snippets/javascript/get-submissions-prefer-javascript-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="objective-c"></a>[Objective-C](#tab/objc)
-[!INCLUDE [sample-code](../includes/snippets/objc/get-submissions-prefer-objc-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="java"></a>[Java](#tab/java)
-[!INCLUDE [sample-code](../includes/snippets/java/get-submissions-prefer-java-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="go"></a>[Go](#tab/go)
-[!INCLUDE [sample-code](../includes/snippets/go/get-submissions-prefer-go-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
-# <a name="powershell"></a>[PowerShell](#tab/powershell)
-[!INCLUDE [sample-code](../includes/snippets/powershell/get-submissions-prefer-powershell-snippets.md)]
-[!INCLUDE [sdk-documentation](../includes/snippets/snippets-sdk-documentation-link.md)]
-
----
-
----
-
-
-#### <a name="response"></a>Отклик
-Ниже приведен пример отклика. 
-
->**Примечание.** Объект отклика, показанный здесь, может быть сокращен для удобочитаемости.
-
-<!-- {
-  "blockType": "response",
-  "truncated": true,
-  "@odata.type": "microsoft.graph.educationSubmission",
-  "isCollection": true
-} -->
-```http
-HTTP/1.1 200 OK
-Content-type: application/json
-Content-length: 4492
-
-{
-    "@odata.context": "https://graph.microsoft.com/beta/$metadata#education/classes('59069eb2-2a09-4d90-bb19-2089cc69d613')/assignments('80da1069-a635-4913-813f-d775a5470a8f')/submissions",
-    "value": [
-        {
-            "status": "working",
-            "submittedDateTime": null,
-            "unsubmittedDateTime": null,
-            "returnedDateTime": null,
-            "reassignedDateTime": null,
-            "resourcesFolderUrl": null,
-            "id": "f51a6687-a4a3-a8d9-ac4a-6ff81c5a8da7",
-            "recipient": {
-                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-                "userId": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d"
-            },
-            "submittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "0ca0dd79-57eb-4903-97dc-88c769dd2a3d",
-                    "displayName": null
-                }
-            },
-            "unsubmittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "returnedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "reassignedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            }
-        },
-        {
-            "status": "reassigned",
-            "submittedDateTime": "2021-11-10T00:57:17.0495233Z",
-            "unsubmittedDateTime": null,
-            "returnedDateTime": null,
-            "reassignedDateTime": "2021-11-10T01:03:25.7812455Z",
-            "resourcesFolderUrl": null,
-            "id": "869369de-3e5a-89eb-6f2d-83cd88f860b5",
-            "recipient": {
-                "@odata.type": "#microsoft.graph.educationSubmissionIndividualRecipient",
-                "userId": "723e2402-f503-4825-a4d5-5143fbe6f53d"
-            },
-            "submittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "723e2402-f503-4825-a4d5-5143fbe6f53d",
-                    "displayName": null
-                }
-            },
-            "unsubmittedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "returnedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": null,
-                    "displayName": null
-                }
-            },
-            "reassignedBy": {
-                "application": null,
-                "device": null,
-                "user": {
-                    "id": "afc58f1f-7c9e-4770-a448-e53ba43463a5",
-                    "displayName": null
-                }
-            }
         }
     ]
 }
